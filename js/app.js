@@ -28,6 +28,7 @@
   let mode = 'learn';
   let flipped = false;
   let soundOn = localStorage.getItem('qq_sound') !== 'off';
+  let autoSent = localStorage.getItem('qq_auto_sent') !== 'off';   // 学习时自动连播例句，默认开
   let srs = null;            // 间隔记忆数据
 
   // ── DOM ──
@@ -47,6 +48,7 @@
   const settingsPanel = $('settingsPanel');
   const dailyInput = $('dailyInput');
   const dailySave = $('dailySave');
+  const autoSentToggle = $('autoSentToggle');
   const learnArea = $('learnArea');
   const learnDoneBtn = $('learnDoneBtn');
   const quizArea = $('quizArea');
@@ -288,6 +290,10 @@
     card.classList.add('pop');
     setTimeout(() => card.classList.remove('pop'), 250);
     if (mode === 'learn' || mode === 'meaning') setTimeout(playWord, 150);
+    if (mode === 'learn' && autoSent) {
+      // 学习模式：播完单词后自动连播例句
+      setTimeout(() => { if (autoSent && mode === 'learn') playSentence(); }, 1800);
+    }
     if (mode === 'sentence') setTimeout(playSentence, 300);
   }
 
@@ -359,7 +365,6 @@
     if (!w) return;
     srs.learning = srs.learning.filter(id => id !== w.id);
     srs.meaning[w.id] = { streak: 0, due: addDaysStr(todayStr(), nextInterval(0)) };
-    srs.todayLearn = srs.todayLearn.filter(id => id !== w.id);
     saveSrs();
     beep(true);
     updateStatusBar();
@@ -428,10 +433,12 @@
     updateStatusBar();
 
     if (mode === 'learn') {
+      // todayLearn 保留今日分配记录；已学 = 今日总数 - 还没学的
       const left = srs.todayLearn.filter(id => srs.learning.includes(id)).length;
+      const total = srs.todayLearn.length;
+      const learned = total - left;
       resultTitle.textContent = left ? '📖 今天的新词学完了！' : '🎉 今日学习任务完成！';
-      const total = Math.min(srs.daily, srs.todayLearn.length + left);
-      resultText.textContent = `已学 ${total - left} 个（今日共 ${total} 个）。` +
+      resultText.textContent = `已学 ${learned} 个（今日共 ${total} 个）。` +
         (boxDueCount('meaning') ? ` 词义待考有 ${boxDueCount('meaning')} 个词到期，去考一考吧！` : ' 明天记得来考试哦！');
     } else {
       const left = boxDueCount(mode);
@@ -602,6 +609,7 @@
   settingsBtn.addEventListener('click', () => {
     settingsPanel.classList.toggle('hidden');
     dailyInput.value = srs.daily;
+    autoSentToggle.checked = autoSent;
   });
   dailySave.addEventListener('click', () => {
     const v = parseInt(dailyInput.value, 10);
@@ -611,6 +619,10 @@
       settingsPanel.classList.add('hidden');
       updateStatusBar();
     }
+  });
+  autoSentToggle.addEventListener('change', () => {
+    autoSent = autoSentToggle.checked;
+    localStorage.setItem('qq_auto_sent', autoSent ? 'on' : 'off');
   });
 
   // 音效

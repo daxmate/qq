@@ -12,6 +12,7 @@
 <header class="topbar">
   <div class="logo">🎯 单词练习</div>
   <div class="topbar-right">
+    <a class="btn-settings" href="reader.html" title="原版书阅读">📚</a>
     <button class="btn-settings" id="settingsBtn" title="设置">⚙️</button>
     <span class="progress-text" id="progressText">—</span>
     <button class="btn-sound" id="soundToggle" title="音效开关">🔊</button>
@@ -35,6 +36,10 @@
     <label>每天学习新单词数：</label>
     <input type="number" id="dailyInput" min="1" max="100" value="10">
     <button class="btn-primary" id="dailySave">保存</button>
+    <label class="switch-label">
+      <input type="checkbox" id="autoSentToggle" checked>
+      <span>学习时自动连播例句</span>
+    </label>
     <p class="hint">学习规则：学完隔 1 天考 → 通过隔 3 天考 → 通过隔 7 天考，连续通过 3 次后进入下一考区（间隔继续翻倍：15、31…天）。答错则重新开始。例句区连续通过 3 次即毕业。每个考区可手动「完全掌握」移出，也可恢复。</p>
   </section>
 

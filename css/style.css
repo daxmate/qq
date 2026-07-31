@@ -94,6 +94,20 @@ body {
 }
 .settings-panel input[type="number"]:focus { border-color: var(--primary); }
 .settings-panel .hint { width: 100%; font-size: 13px; color: var(--text-light); }
+.switch-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: auto;
+}
+.switch-label input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary-dark);
+  cursor: pointer;
+}
 
 /* ── 主区 ── */
 .container {
@@ -250,8 +264,8 @@ input[type="text"]:focus { border-color: var(--primary); }
   cursor: pointer;
   font-weight: 700;
 }
-.btn-learn { background: var(--ok); color: #fff; }
-.btn-know { background: var(--ok); color: #fff; }
+.btn-learn { background: var(--primary-dark); color: #fff; }
+.btn-know { background: var(--primary-dark); color: #fff; }
 .btn-master {
   border: 2px solid #aaa;
   background: #fff;

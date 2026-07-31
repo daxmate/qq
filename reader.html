@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 原版书阅读 · 千千</title>
+<link rel="stylesheet" href="css/reader.css">
+</head>
+<body>
+
+<!-- 书架视图 -->
+<div id="shelfView" class="view">
+  <header class="reader-topbar">
+    <div class="logo">📚 原版书阅读</div>
+    <div class="topbar-right">
+      <a class="btn-back" href="./" title="返回单词练习">🎯 单词练习</a>
+      <button class="btn-sound" id="shelfWordbookBtn" title="生词本">📝 生词本</button>
+    </div>
+  </header>
+
+  <main class="shelf-main">
+    <section class="shelf-empty hidden" id="shelfEmpty">
+      <p>书架还是空的～</p>
+      <p class="hint">点击下方按钮添加 EPUB 电子书</p>
+    </section>
+    <section class="shelf-grid" id="shelfGrid"></section>
+
+    <div class="shelf-actions">
+      <label class="btn-add" for="fileInput">➕ 添加电子书 (EPUB)</label>
+      <input type="file" id="fileInput" accept=".epub,application/epub+zip" class="hidden">
+    </div>
+  </main>
+</div>
+
+<!-- 阅读器视图 -->
+<div id="readerView" class="view hidden">
+  <header class="reader-topbar">
+    <button class="btn-back" id="backBtn" title="返回书架">← 书架</button>
+    <div class="reader-title" id="readerTitle">—</div>
+    <div class="topbar-right">
+      <button class="btn-sound" id="tocBtn" title="目录">📑</button>
+      <button class="btn-sound" id="fontBtn" title="字体大小">🔠</button>
+      <button class="btn-sound" id="readerWordbookBtn" title="生词本">📝</button>
+    </div>
+  </header>
+
+  <div class="reader-body" id="readerBody">
+    <div id="epubView"></div>
+  </div>
+
+  <!-- 目录抽屉 -->
+  <div class="drawer hidden" id="tocDrawer">
+    <div class="drawer-head">目录 <button class="drawer-close" id="tocClose">✕</button></div>
+    <div class="drawer-list" id="tocList"></div>
+  </div>
+
+  <!-- 字体设置 -->
+  <div class="drawer hidden" id="fontDrawer">
+    <div class="drawer-head">字体大小 <button class="drawer-close" id="fontClose">✕</button></div>
+    <div class="font-controls">
+      <button class="btn-font" data-size="-1">A-</button>
+      <button class="btn-font" data-size="0">A</button>
+      <button class="btn-font" data-size="1">A+</button>
+    </div>
+  </div>
+
+  <!-- 选词弹窗 -->
+  <div class="word-popup hidden" id="wordPopup">
+    <div class="word-popup-head">
+      <span id="popupWord">—</span>
+      <button class="drawer-close" id="popupClose">✕</button>
+    </div>
+    <div class="word-popup-sent" id="popupSentence"></div>
+    <div class="word-popup-actions">
+      <button class="btn-primary" id="popupAdd">📝 加入生词本</button>
+    </div>
+  </div>
+</div>
+
+<!-- 生词本弹窗 -->
+<div class="wordbook-modal hidden" id="wordbookModal">
+  <div class="wordbook-box">
+    <div class="drawer-head">📝 生词本 <button class="drawer-close" id="wbClose">✕</button></div>
+    <div class="wordbook-list" id="wordbookList"></div>
+    <div class="wordbook-actions">
+      <button class="btn-primary" id="wbExport">⬇️ 导出为文本</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor/jszip.min.js"></script>
+<script src="js/vendor/jszip-utils.min.js"></script>
+<script src="js/vendor/epub.min.js"></script>
+<script src="js/reader.js"></script>
+</body>
+</html>
