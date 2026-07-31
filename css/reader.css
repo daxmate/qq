@@ -140,6 +140,34 @@ body {
 #epubView { width: 100%; height: calc(100vh - 100px); }
 #epubView iframe { width: 100%; height: 100%; border: none; }
 
+/* ── 屏幕翻页按钮 ── */
+.pg-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(255, 92, 138, 0.15);
+  color: var(--primary-dark);
+  font-size: 34px;
+  width: 52px;
+  height: 76px;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 50;
+  transition: background 0.15s;
+  touch-action: manipulation;
+}
+.pg-btn:hover { background: rgba(255, 92, 138, 0.3); }
+.pg-prev { left: 8px; }
+.pg-next { right: 8px; }
+
+/* 移动端：按钮更大更明显 */
+@media (max-width: 768px) {
+  .pg-btn { width: 44px; height: 90px; font-size: 40px; opacity: 0.75; }
+  .pg-prev { left: 4px; }
+  .pg-next { right: 4px; }
+}
+
 /* ── 抽屉 ── */
 .drawer {
   position: fixed;

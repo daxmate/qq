@@ -151,13 +151,56 @@
     readerBody.classList.remove('hidden');
 
     book = ePub(rec.data);
-    rendition = book.renderTo(epubView, { width: '100%', height: '100%', flow: 'paginated', spread: 'none' });
+    rendition = book.renderTo(epubView, { width: '100%', height: '100%', flow: 'paginated', spread: 'none', swipe: true });
 
     rendition.themes.fontSize(FONT_SIZES[fontLevel]);
 
-    // 选词处理
+    // 选词处理：桌面端 epub.js selected 事件（双击）
     rendition.on('selected', (cfiRange, contents) => {
       handleSelection(cfiRange, contents);
+    });
+
+    // 选词处理：移动端长按选词（selectionchange 兑底）
+    let selTimer = null;
+    const bindSelection = (contents) => {
+      try {
+        const doc = contents.document;
+        doc.addEventListener('selectionchange', () => {
+          try {
+            const sel = contents.window.getSelection();
+            if (!sel || sel.isCollapsed) return;
+            const text = sel.toString().trim();
+            if (!text) return;
+            clearTimeout(selTimer);
+            selTimer = setTimeout(() => {
+              // 取第一个单词
+              const words = text.split(/\s+/).filter(Boolean);
+              const word = words[0].replace(/[^A-Za-z']/g, '');
+              if (!word) return;
+              // 取整句上下文
+              let sentence = '';
+              try {
+                let node = sel.anchorNode;
+                let p = node;
+                while (p && p !== doc.body && !/^P$|^DIV$|^LI$/.test(p.tagName)) p = p.parentNode;
+                if (p && p.textContent) {
+                  sentence = p.textContent.trim().replace(/\s+/g, ' ');
+                  if (sentence.length > 200) sentence = sentence.slice(0, 200) + '…';
+                }
+              } catch (e) {}
+              pendingWord = { word, sentence, bookTitle: currentBook ? currentBook.title : '' };
+              popupWord.textContent = word;
+              popupSentence.textContent = sentence || '（无上下文）';
+              wordPopup.classList.remove('hidden');
+            }, 400);
+          } catch (e) {}
+        });
+      } catch (e) {}
+    };
+    rendition.on('rendered', (section, view) => {
+      try {
+        if (view && view.contents) bindSelection(view.contents);
+      } catch (e) {}
     });
 
     try {
@@ -338,7 +381,9 @@
     URL.revokeObjectURL(url);
   });
 
-  // ── 键盘翻页 ──
+  // ── 键盘翻页 + 屏幕按钮 ──
+  $('pgPrev').addEventListener('click', () => { if (rendition) rendition.prev(); });
+  $('pgNext').addEventListener('click', () => { if (rendition) rendition.next(); });
   document.addEventListener('keydown', (e) => {
     if (!rendition) return;
     if (wordPopup.classList.contains('hidden') === false) return;
