@@ -235,11 +235,12 @@ input[type="text"]:focus { border-color: var(--primary); }
 .blank-sentence .blank.filled { color: var(--primary-dark); border-color: var(--ok); }
 
 /* ── 学习 / 待考按钮 ── */
-.learn-area, .quiz-area {
+.learn-area, .quiz-area, .master-area, .restore-area {
   margin-top: 14px;
   display: flex;
   gap: 12px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .btn-learn, .btn-know, .btn-dontknow {
   border: none;
@@ -251,6 +252,52 @@ input[type="text"]:focus { border-color: var(--primary); }
 }
 .btn-learn { background: var(--ok); color: #fff; }
 .btn-know { background: var(--ok); color: #fff; }
+.btn-master {
+  border: 2px solid #aaa;
+  background: #fff;
+  color: #666;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-master:hover { border-color: var(--fail); color: var(--fail); }
+.btn-restore {
+  border: none;
+  background: var(--accent);
+  color: #7a5c00;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.restore-list {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  max-height: 240px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.restore-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+}
+.restore-row:last-child { border-bottom: none; }
+.btn-mini {
+  border: none;
+  background: var(--ok);
+  color: #fff;
+  border-radius: 12px;
+  padding: 4px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
 
 /* ── 操作按钮 ── */
 .action-bar {

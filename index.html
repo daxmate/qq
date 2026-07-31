@@ -24,9 +24,9 @@
   <!-- 学习状态栏 -->
   <section class="status-bar" id="statusBar">
     <div class="status-item" id="stLearn">📖 待学 <b>0</b></div>
-    <div class="status-item" id="stBox1">① <b>0</b></div>
-    <div class="status-item" id="stBox2">② <b>0</b></div>
-    <div class="status-item" id="stBox3">③ <b>0</b></div>
+    <div class="status-item" id="stMeaning">词义 <b>0</b></div>
+    <div class="status-item" id="stSpell">拼写 <b>0</b></div>
+    <div class="status-item" id="stSentence">例句 <b>0</b></div>
     <div class="status-item done" id="stDone">✅ <b>0</b></div>
   </section>
 
@@ -35,15 +35,15 @@
     <label>每天学习新单词数：</label>
     <input type="number" id="dailyInput" min="1" max="100" value="10">
     <button class="btn-primary" id="dailySave">保存</button>
-    <p class="hint">学习规则：学完隔 1 天考 → 通过隔 3 天考 → 通过隔 7 天考 → 毕业。答错回到第①区重新开始。</p>
+    <p class="hint">学习规则：学完隔 1 天考 → 通过隔 3 天考 → 通过隔 7 天考，连续通过 3 次后进入下一考区（间隔继续翻倍：15、31…天）。答错则重新开始。例句区连续通过 3 次即毕业。每个考区可手动「完全掌握」移出，也可恢复。</p>
   </section>
 
   <!-- 模式选择 -->
   <section class="mode-bar">
     <button class="mode-btn active" data-mode="learn">📖 学习</button>
-    <button class="mode-btn" data-mode="box1">① 待考</button>
-    <button class="mode-btn" data-mode="box2">② 待考</button>
-    <button class="mode-btn" data-mode="box3">③ 待考</button>
+    <button class="mode-btn" data-mode="meaning">词义待考</button>
+    <button class="mode-btn" data-mode="spell">拼写待考</button>
+    <button class="mode-btn" data-mode="sentence">例句待考</button>
   </section>
 
   <!-- 卡片区 -->
@@ -64,7 +64,7 @@
       <button class="btn-learn" id="learnDoneBtn">✅ 学会了</button>
     </div>
 
-    <!-- 待考模式：认识/不会 -->
+    <!-- 词义模式：认识/不会 -->
     <div class="quiz-area hidden" id="quizArea">
       <button class="btn-know" id="knowBtn">✅ 认识</button>
       <button class="btn-dontknow" id="dontKnowBtn">❌ 不会</button>
@@ -83,6 +83,17 @@
       <input type="text" id="sentenceInput" placeholder="填入缺失的单词" autocomplete="off">
       <button class="btn-primary" id="sentenceCheck">检查</button>
       <div class="feedback hidden" id="sentenceFeedback"></div>
+    </div>
+
+    <!-- 完全掌握 -->
+    <div class="master-area hidden" id="masterArea">
+      <button class="btn-master" id="masterBtn">🎓 完全掌握（移出本考区）</button>
+    </div>
+
+    <!-- 恢复已移出 -->
+    <div class="restore-area hidden" id="restoreArea">
+      <button class="btn-restore" id="restoreBtn">↩️ 恢复已移出的单词</button>
+      <div class="restore-list hidden" id="restoreList"></div>
     </div>
   </section>
 

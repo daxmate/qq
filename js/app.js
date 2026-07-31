@@ -1,19 +1,24 @@
-/* 千千单词练习 - 间隔记忆主逻辑
- * 流程：待学区 → 学习 → 待考①(隔1天) → 待考②(隔3天) → 待考③(隔7天) → 毕业
- * 答错回到待考①重新开始。
+/* 千千单词练习 - 间隔记忆 v2
+ * 待学区 → 学习 → 词义待考(连续通过3次解锁拼写) → 拼写待考(连续通过3次解锁例句) → 例句待考(连续通过3次毕业)
+ * 词义/拼写区长期保留，间隔按 Anki 风格翻倍：1→3→7→15→31→63 天
+ * 答错清零重来；每个考区可「完全掌握」移出（可恢复）
  */
 (() => {
   'use strict';
 
   const MODES = {
-    learn: { label: '学习' },
-    box1:  { label: '待考①' },
-    box2:  { label: '待考②' },
-    box3:  { label: '待考③' },
+    learn:    { label: '学习' },
+    meaning:  { label: '词义待考' },
+    spell:    { label: '拼写待考' },
+    sentence: { label: '例句待考' },
   };
 
-  // 各待考区的间隔天数（进入该区后几天考）
-  const BOX_INTERVALS = { 1: 1, 2: 3, 3: 7 };
+  // Anki 风格间隔序列（通过次数 → 下次间隔天数）：1, 3, 7, 15, 31, 63, 127...
+  function nextInterval(streak) {
+    return Math.pow(2, streak + 1) - 1;
+  }
+  const PASS_COUNT_TO_UNLOCK = 3;   // 连续通过 3 次解锁下一考区 / 毕业
+
   const SRS_KEY = 'qq_srs_v2';
 
   // ── 状态 ──
@@ -47,15 +52,29 @@
   const quizArea = $('quizArea');
   const knowBtn = $('knowBtn');
   const dontKnowBtn = $('dontKnowBtn');
+  const spellArea = $('spellArea');
+  const spellInput = $('spellInput');
+  const spellCheck = $('spellCheck');
+  const spellFeedback = $('spellFeedback');
+  const sentenceArea = $('sentenceArea');
+  const blankSentence = $('blankSentence');
+  const sentenceInput = $('sentenceInput');
+  const sentenceCheck = $('sentenceCheck');
+  const sentenceFeedback = $('sentenceFeedback');
+  const masterArea = $('masterArea');
+  const masterBtn = $('masterBtn');
+  const restoreArea = $('restoreArea');
+  const restoreBtn = $('restoreBtn');
+  const restoreList = $('restoreList');
   const resultPanel = $('resultPanel');
   const resultTitle = $('resultTitle');
   const resultText = $('resultText');
   const restartBtn = $('restartBtn');
   const cardArea = document.querySelector('.card-area');
   const stLearn = $('stLearn');
-  const stBox1 = $('stBox1');
-  const stBox2 = $('stBox2');
-  const stBox3 = $('stBox3');
+  const stMeaning = $('stMeaning');
+  const stSpell = $('stSpell');
+  const stSentence = $('stSentence');
   const stDone = $('stDone');
 
   const audioCache = {};
@@ -74,16 +93,27 @@
   }
 
   // ── 间隔记忆数据 ──
+  // srs = {
+  //   learning: [id],             待学区
+  //   meaning:  { id: {streak, due} },
+  //   spell:    { id: {streak, due} },
+  //   sentence: { id: {streak, due} },
+  //   removed:  { meaning: [id], spell: [id], sentence: [id] },  已移出（可恢复）
+  //   done: [id],                 毕业
+  //   daily: 10,
+  //   todayLearn: [id],           今天分配的学习队列
+  //   lastDate: 'YYYY-MM-DD',
+  // }
+  const BOXES = ['meaning', 'spell', 'sentence'];
   function defaultSrs() {
     return {
-      learning: [],   // 待学区（未学过的词 id）
-      box1: {},       // id -> 考试日期 'YYYY-MM-DD'
-      box2: {},
-      box3: {},
-      done: [],       // 毕业
-      daily: 10,      // 每天学习新词数
-      todayLearn: [], // 今天分配的学习队列
-      lastDate: null, // 上次分配日期
+      learning: [],
+      meaning: {}, spell: {}, sentence: {},
+      removed: { meaning: [], spell: [], sentence: [] },
+      done: [],
+      daily: 10,
+      todayLearn: [],
+      lastDate: null,
     };
   }
   function loadSrs() {
@@ -91,19 +121,21 @@
       const raw = localStorage.getItem(SRS_KEY);
       srs = raw ? JSON.parse(raw) : null;
     } catch (e) { srs = null; }
-    if (!srs) srs = defaultSrs();
+    if (!srs || !srs.removed) srs = defaultSrs();
   }
   function saveSrs() {
     localStorage.setItem(SRS_KEY, JSON.stringify(srs));
   }
 
-  function dueCount(box) {
+  function boxDueCount(boxName) {
+    const box = srs[boxName];
     const t = todayStr();
-    return Object.values(box).filter(d => d <= t).length;
+    return Object.values(box).filter(r => r.due <= t).length;
   }
-  function dueIds(box) {
+  function boxDueIds(boxName) {
+    const box = srs[boxName];
     const t = todayStr();
-    return Object.entries(box).filter(([, d]) => d <= t).map(([id]) => Number(id));
+    return Object.entries(box).filter(([, r]) => r.due <= t).map(([id]) => Number(id));
   }
 
   // 每天分配新词：首次打开时从待学区取 daily 个
@@ -156,28 +188,31 @@
   // ── 队列构建 ──
   function buildQueue() {
     if (mode === 'learn') {
-      // 今日待学（还没学完的）
       const todo = srs.todayLearn.filter(id => srs.learning.includes(id));
       return todo.map(id => words[id]).filter(Boolean);
     }
-    // 待考区：到期词
-    const box = srs['box' + mode.slice(3)];
-    const ids = dueIds(box);
+    // 考区：到期词
+    const ids = boxDueIds(mode);
     return ids.map(id => words[id]).filter(Boolean);
   }
 
   function updateStatusBar() {
-    const n = (ids) => ids.length;
-    stLearn.innerHTML = `📖 待学 <b>${n(srs.learning)}</b>`;
-    stBox1.innerHTML = `① <b>${dueCount(srs.box1)}</b>`;
-    stBox2.innerHTML = `② <b>${dueCount(srs.box2)}</b>`;
-    stBox3.innerHTML = `③ <b>${dueCount(srs.box3)}</b>`;
-    stDone.innerHTML = `✅ <b>${n(srs.done)}</b>`;
-    // 待考按钮：无到期内容则禁用
+    stLearn.innerHTML = `📖 待学 <b>${srs.learning.length}</b>`;
+    stMeaning.innerHTML = `词义 <b>${boxDueCount('meaning')}</b>`;
+    stSpell.innerHTML = `拼写 <b>${boxDueCount('spell')}</b>`;
+    stSentence.innerHTML = `例句 <b>${boxDueCount('sentence')}</b>`;
+    stDone.innerHTML = `✅ <b>${srs.done.length}</b>`;
+    // 考区按钮：无到期内容且无已移出 → 禁用
     document.querySelectorAll('.mode-btn').forEach(btn => {
-      if (btn.dataset.mode.startsWith('box')) {
-        const bn = btn.dataset.mode.slice(3);
-        btn.disabled = dueCount(srs['box' + bn]) === 0;
+      const m = btn.dataset.mode;
+      if (BOXES.includes(m)) {
+        const hasDue = boxDueCount(m) > 0;
+        const hasRemoved = srs.removed[m].length > 0;
+        btn.disabled = !hasDue && !hasRemoved;
+        // 显示到期数量
+        const n = boxDueCount(m);
+        const label = MODES[m].label;
+        btn.textContent = hasDue ? `${label} (${n})` : (hasRemoved ? `${label} (已移出${srs.removed[m].length})` : label);
       }
     });
   }
@@ -193,6 +228,15 @@
     resultPanel.classList.add('hidden');
     learnArea.classList.add('hidden');
     quizArea.classList.add('hidden');
+    spellArea.classList.add('hidden');
+    sentenceArea.classList.add('hidden');
+    masterArea.classList.add('hidden');
+    restoreArea.classList.add('hidden');
+    restoreList.classList.add('hidden');
+    spellFeedback.classList.add('hidden');
+    sentenceFeedback.classList.add('hidden');
+    spellInput.value = '';
+    sentenceInput.value = '';
     flipBtn.classList.remove('hidden');
     nextBtn.classList.remove('hidden');
 
@@ -201,9 +245,8 @@
     cardSentText.textContent = w.sent;
     cardCnSent.textContent = w.cn_sent;
 
-    const isQuiz = mode.startsWith('box');
-    // 学习模式：直接显示全部（学新词）
     if (mode === 'learn') {
+      // 学习模式：全展示，点「学会了」
       cardWord.textContent = w.en;
       cardCn.classList.remove('hidden');
       cardSent.classList.toggle('hidden', !w.sent);
@@ -211,26 +254,111 @@
       learnArea.classList.remove('hidden');
       flipBtn.classList.add('hidden');
       nextBtn.classList.add('hidden');
-    } else {
-      // 待考模式：看英文想中文，隐藏答案
+    } else if (mode === 'meaning') {
+      // 词义：看英文想中文，隐藏答案
       cardWord.textContent = w.en;
       cardCn.classList.add('hidden');
       cardSent.classList.add('hidden');
       cardCnSent.classList.add('hidden');
       quizArea.classList.remove('hidden');
+      masterArea.classList.remove('hidden');
+      flipBtn.textContent = '👁️ 显示答案';
+    } else if (mode === 'spell') {
+      // 拼写：看中文写英文，隐藏英文
+      cardWord.textContent = '________';
+      cardCn.classList.remove('hidden');       // 中文是题目
+      cardSent.classList.add('hidden');
+      cardCnSent.classList.add('hidden');
+      spellArea.classList.remove('hidden');
+      masterArea.classList.remove('hidden');
+      spellInput.focus();
+      flipBtn.textContent = '👁️ 显示答案';
+    } else if (mode === 'sentence') {
+      // 例句：挖空填词
+      cardWord.textContent = '________';
+      cardCn.classList.remove('hidden');       // 中文提示
+      cardSent.classList.add('hidden');
+      cardCnSent.classList.add('hidden');
+      sentenceArea.classList.remove('hidden');
+      masterArea.classList.remove('hidden');
+      renderBlank();
+      sentenceInput.focus();
       flipBtn.textContent = '👁️ 显示答案';
     }
     card.classList.add('pop');
     setTimeout(() => card.classList.remove('pop'), 250);
-    setTimeout(playWord, 150);
+    if (mode === 'learn' || mode === 'meaning') setTimeout(playWord, 150);
+    if (mode === 'sentence') setTimeout(playSentence, 300);
+  }
+
+  function renderBlank() {
+    const w = queue[idx];
+    if (!w || !w.sent) return;
+    const word = w.en;
+    const esc = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    let re = new RegExp('\\b' + esc + '\\b', 'i');
+    let m = w.sent.match(re);
+    if (!m) re = new RegExp('\\b' + esc + '(s|es|ing|ed)?\\b', 'i');
+    const parts = w.sent.split(re);
+    blankSentence.innerHTML = '';
+    parts.forEach((part, i) => {
+      if (part) blankSentence.appendChild(document.createTextNode(part));
+      if (i < parts.length - 1) {
+        const b = document.createElement('span');
+        b.className = 'blank';
+        b.textContent = '______';
+        blankSentence.appendChild(b);
+      }
+    });
+  }
+
+  // ── 核心：通过/答错 ──
+  function markResult(ok) {
+    const w = queue[idx];
+    if (!w) return;
+    const boxName = mode;
+    const box = srs[boxName];
+    const rec = box[w.id] || { streak: 0, due: todayStr() };
+    const t = todayStr();
+
+    if (ok) {
+      rec.streak += 1;
+      if (rec.streak >= PASS_COUNT_TO_UNLOCK) {
+        if (boxName === 'sentence') {
+          // 例句区：毕业
+          delete box[w.id];
+          srs.done.push(w.id);
+        } else {
+          // 词义/拼写：解锁下一考区（下一区从 streak=0 开始），本区继续保留、间隔继续拉长
+          const nextBox = boxName === 'meaning' ? 'spell' : 'sentence';
+          if (!srs[nextBox][w.id]) {
+            srs[nextBox][w.id] = { streak: 0, due: addDaysStr(t, nextInterval(0)) };
+          }
+          rec.due = addDaysStr(t, nextInterval(rec.streak));
+          box[w.id] = rec;
+        }
+      } else {
+        // 还没满 3 次：本区间隔拉长
+        rec.due = addDaysStr(t, nextInterval(rec.streak));
+        box[w.id] = rec;
+      }
+      beep(true);
+    } else {
+      // 答错：清零重来，明天考
+      rec.streak = 0;
+      rec.due = addDaysStr(t, nextInterval(0));
+      box[w.id] = rec;
+      beep(false);
+    }
+    saveSrs();
+    updateStatusBar();
   }
 
   function markLearn() {
     const w = queue[idx];
     if (!w) return;
-    // 从待学区移除 → 进待考①（明天考）
     srs.learning = srs.learning.filter(id => id !== w.id);
-    srs.box1[w.id] = addDaysStr(todayStr(), BOX_INTERVALS[1]);
+    srs.meaning[w.id] = { streak: 0, due: addDaysStr(todayStr(), nextInterval(0)) };
     srs.todayLearn = srs.todayLearn.filter(id => id !== w.id);
     saveSrs();
     beep(true);
@@ -238,51 +366,79 @@
     next();
   }
 
-  function markAnswer(ok) {
+  // 完全掌握：从当前考区移出（可恢复）
+  function markMastered() {
     const w = queue[idx];
     if (!w) return;
-    const boxN = Number(mode.slice(3));
-    const box = srs['box' + boxN];
-    delete box[w.id];
-    const t = todayStr();
-    if (ok) {
-      if (boxN >= 3) {
-        // 毕业
-        srs.done.push(w.id);
-      } else {
-        // 升下一区
-        srs['box' + (boxN + 1)][w.id] = addDaysStr(t, BOX_INTERVALS[boxN + 1]);
-      }
-      beep(true);
-    } else {
-      // 答错回待考①，明天重考
-      srs.box1[w.id] = addDaysStr(t, BOX_INTERVALS[1]);
-      beep(false);
+    if (!BOXES.includes(mode)) return;
+    const box = srs[mode];
+    if (box[w.id]) {
+      delete box[w.id];
+      if (!srs.removed[mode].includes(w.id)) srs.removed[mode].push(w.id);
+      saveSrs();
+      updateStatusBar();
+      showResult();
     }
+  }
+
+  // 恢复：把已移出的词加回当前考区（从明天开始重新考核）
+  function restoreWord(id, boxName) {
+    srs.removed[boxName] = srs.removed[boxName].filter(x => x !== id);
+    srs[boxName][id] = { streak: 0, due: addDaysStr(todayStr(), nextInterval(0)) };
     saveSrs();
     updateStatusBar();
+    renderRestoreList();
+  }
+  function renderRestoreList() {
+    if (!BOXES.includes(mode)) return;
+    const ids = srs.removed[mode];
+    if (!ids.length) {
+      restoreList.classList.add('hidden');
+      return;
+    }
+    restoreList.classList.remove('hidden');
+    restoreList.innerHTML = '';
+    ids.forEach(id => {
+      const w = words[id];
+      if (!w) return;
+      const row = document.createElement('div');
+      row.className = 'restore-row';
+      const info = document.createElement('span');
+      info.textContent = `${w.en} ${w.cn}`;
+      const btn = document.createElement('button');
+      btn.textContent = '加回';
+      btn.className = 'btn-mini';
+      btn.addEventListener('click', () => restoreWord(id, mode));
+      row.appendChild(info);
+      row.appendChild(btn);
+      restoreList.appendChild(row);
+    });
   }
 
   function showResult() {
     cardArea.classList.add('hidden');
     learnArea.classList.add('hidden');
     quizArea.classList.add('hidden');
+    spellArea.classList.add('hidden');
+    sentenceArea.classList.add('hidden');
+    masterArea.classList.add('hidden');
     flipBtn.classList.add('hidden');
     nextBtn.classList.add('hidden');
     resultPanel.classList.remove('hidden');
     updateStatusBar();
+
     if (mode === 'learn') {
       const left = srs.todayLearn.filter(id => srs.learning.includes(id)).length;
       resultTitle.textContent = left ? '📖 今天的新词学完了！' : '🎉 今日学习任务完成！';
-      resultText.textContent = `已学 ${srs.daily - left} 个（今日共 ${Math.min(srs.daily, srs.todayLearn.length + left)} 个）。` +
-        (dueCount(srs.box1) ? ` 待考①有 ${dueCount(srs.box1)} 个词到期，去考一考吧！` : ' 明天记得来考试哦！');
+      const total = Math.min(srs.daily, srs.todayLearn.length + left);
+      resultText.textContent = `已学 ${total - left} 个（今日共 ${total} 个）。` +
+        (boxDueCount('meaning') ? ` 词义待考有 ${boxDueCount('meaning')} 个词到期，去考一考吧！` : ' 明天记得来考试哦！');
     } else {
-      const boxN = Number(mode.slice(3));
-      const left = dueCount(srs['box' + boxN]);
+      const left = boxDueCount(mode);
       resultTitle.textContent = '🎉 本区考试完成！';
       resultText.textContent = `本次共考 ${queue.length} 个词。` +
         (left ? ` 还有 ${left} 个到期待考。` : '') +
-        (dueCount(srs.box1) ? ` 待考①有 ${dueCount(srs.box1)} 个到期。` : ' 明天再来吧！');
+        (boxDueCount('meaning') ? ` 词义待考有 ${boxDueCount('meaning')} 个到期。` : ' 明天再来吧！');
     }
   }
 
@@ -303,6 +459,9 @@
       cardArea.classList.add('hidden');
       learnArea.classList.add('hidden');
       quizArea.classList.add('hidden');
+      spellArea.classList.add('hidden');
+      sentenceArea.classList.add('hidden');
+      masterArea.classList.add('hidden');
       flipBtn.classList.add('hidden');
       nextBtn.classList.add('hidden');
       resultPanel.classList.remove('hidden');
@@ -310,10 +469,15 @@
         resultTitle.textContent = '📖 今天的新词学完了！';
         resultText.textContent = `待学区还剩 ${srs.learning.length} 个词，明天继续。`;
       } else {
-        const boxN = Number(mode.slice(3));
         resultTitle.textContent = '⏰ 该区暂无到期考试';
-        const nxt = dueCount(srs.box1) ? `待考①有 ${dueCount(srs.box1)} 个到期。` : '明天再来吧！';
-        resultText.textContent = `待考${'①②③'[boxN - 1]}区还没有到期的词。${nxt}`;
+        const nxt = boxDueCount('meaning') ? `词义待考有 ${boxDueCount('meaning')} 个到期。` : '明天再来吧！';
+        resultText.textContent = `${MODES[mode].label}区还没有到期的词。${nxt}`;
+      }
+      // 有已移出的词时，显示恢复入口
+      if (BOXES.includes(mode) && srs.removed[mode].length) {
+        restoreArea.classList.remove('hidden');
+        renderRestoreList();
+        resultText.textContent += `（有 ${srs.removed[mode].length} 个已移出的词可恢复）`;
       }
       updateStatusBar();
       return;
@@ -325,9 +489,9 @@
     const w = queue[idx];
     if (!w) return;
     flipped = !flipped;
-    if (mode.startsWith('box')) {
-      cardWord.textContent = flipped ? w.en : w.en;
-      cardCn.classList.toggle('hidden', !flipped);
+    if (mode === 'meaning' || mode === 'spell' || mode === 'sentence') {
+      cardWord.textContent = flipped ? w.en : (mode === 'meaning' ? w.en : '________');
+      cardCn.classList.toggle('hidden', mode === 'meaning' ? !flipped : false);
       cardSent.classList.toggle('hidden', !flipped || !w.sent);
       cardCnSent.classList.toggle('hidden', !flipped || !w.cn_sent);
       flipBtn.textContent = flipped ? '🙈 隐藏答案' : '👁️ 显示答案';
@@ -336,6 +500,15 @@
       cardSent.classList.toggle('hidden', flipped || !w.sent);
       cardCnSent.classList.toggle('hidden', flipped || !w.cn_sent);
     }
+  }
+
+  function showAnswer() {
+    const w = queue[idx];
+    if (!w) return;
+    cardWord.textContent = w.en;
+    cardCn.classList.remove('hidden');
+    cardSent.classList.remove('hidden');
+    cardCnSent.classList.remove('hidden');
   }
 
   // ── 事件绑定 ──
@@ -350,7 +523,7 @@
 
   card.addEventListener('click', (e) => {
     if (e.target.closest('.mini-sound')) return;
-    if (mode.startsWith('box') && !flipped) {
+    if ((mode === 'meaning' || mode === 'spell' || mode === 'sentence') && !flipped) {
       flip(); playWord();
     }
   });
@@ -359,16 +532,68 @@
   flipBtn.addEventListener('click', flip);
   nextBtn.addEventListener('click', next);
   learnDoneBtn.addEventListener('click', markLearn);
-  knowBtn.addEventListener('click', () => { markAnswer(true); setTimeout(next, 400); });
-  dontKnowBtn.addEventListener('click', () => { markAnswer(false); showAnswer(); setTimeout(next, 1600); });
+  knowBtn.addEventListener('click', () => { markResult(true); showAnswer(); setTimeout(next, 900); });
+  dontKnowBtn.addEventListener('click', () => { markResult(false); showAnswer(); setTimeout(next, 1600); });
+  spellCheck.addEventListener('click', checkSpell);
+  sentenceCheck.addEventListener('click', checkSentence);
+  masterBtn.addEventListener('click', markMastered);
+  restoreBtn.addEventListener('click', () => {
+    restoreList.classList.toggle('hidden');
+    renderRestoreList();
+  });
 
-  function showAnswer() {
+  function checkSpell() {
     const w = queue[idx];
     if (!w) return;
-    cardCn.classList.remove('hidden');
-    cardSent.classList.remove('hidden');
-    cardCnSent.classList.remove('hidden');
-    playWord();
+    const ans = spellInput.value.trim().toLowerCase();
+    const correct = w.en.toLowerCase();
+    const ok = ans === correct || ans === correct.replace(/ /g, '');
+    if (ans === '') return;
+    if (ok) {
+      showFeedback(spellFeedback, true, '✅ 正确！');
+      markResult(true);
+      showAnswer();
+      setTimeout(next, 900);
+    } else {
+      showFeedback(spellFeedback, false, `❌ 不对，正确答案是 ${w.en}`);
+      markResult(false);
+      showAnswer();
+      setTimeout(() => {
+        spellFeedback.classList.add('hidden');
+        spellInput.value = '';
+        spellInput.focus();
+      }, 1600);
+    }
+  }
+
+  function checkSentence() {
+    const w = queue[idx];
+    if (!w) return;
+    const ans = sentenceInput.value.trim().toLowerCase();
+    if (ans === '') return;
+    const correct = w.en.toLowerCase();
+    const ok = ans === correct;
+    if (ok) {
+      showFeedback(sentenceFeedback, true, '✅ 正确！');
+      markResult(true);
+      showAnswer();
+      setTimeout(next, 900);
+    } else {
+      showFeedback(sentenceFeedback, false, `❌ 不对，应该是 ${w.en}`);
+      markResult(false);
+      showAnswer();
+      setTimeout(() => {
+        sentenceFeedback.classList.add('hidden');
+        sentenceInput.value = '';
+        sentenceInput.focus();
+      }, 1600);
+    }
+  }
+
+  function showFeedback(el, ok, text) {
+    el.textContent = text;
+    el.className = 'feedback ' + (ok ? 'ok' : 'fail');
+    el.classList.remove('hidden');
   }
 
   restartBtn.addEventListener('click', restart);
@@ -399,6 +624,13 @@
   // 键盘
   document.addEventListener('keydown', (e) => {
     if (e.target === dailyInput) return;
+    if (e.target === spellInput || e.target === sentenceInput) {
+      if (e.key === 'Enter') {
+        if (mode === 'spell') checkSpell();
+        else if (mode === 'sentence') checkSentence();
+      }
+      return;
+    }
     if (e.key === 'Enter') next();
     if (e.key === ' ') { e.preventDefault(); playWord(); }
   });
@@ -413,7 +645,7 @@
       words = data.words;
       loadSrs();
       // 首次使用：全部词进待学区
-      if (!srs.learning.length && !srs.done.length && !Object.keys(srs.box1).length) {
+      if (!srs.learning.length && !srs.done.length && !Object.keys(srs.meaning).length && !Object.keys(srs.spell).length && !Object.keys(srs.sentence).length) {
         srs.learning = words.map(w => w.id);
         saveSrs();
       }
