@@ -151,7 +151,7 @@
     readerBody.classList.remove('hidden');
 
     book = ePub(rec.data);
-    rendition = book.renderTo(epubView, { width: '100%', height: '100%', flow: 'paginated', spread: 'none', swipe: true });
+    rendition = book.renderTo(epubView, { width: '100%', height: '100%', flow: 'paginated', spread: 'none', swipe: true, allowScriptedContent: true, allowPopups: true });
 
     rendition.themes.fontSize(FONT_SIZES[fontLevel]);
 
