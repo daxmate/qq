@@ -12,7 +12,8 @@
 <header class="topbar">
   <div class="logo">🎯 单词练习</div>
   <div class="topbar-right">
-    <span class="progress-text" id="progressText">0 / 463</span>
+    <button class="btn-settings" id="settingsBtn" title="设置">⚙️</button>
+    <span class="progress-text" id="progressText">—</span>
     <button class="btn-sound" id="soundToggle" title="音效开关">🔊</button>
   </div>
 </header>
@@ -20,13 +21,29 @@
 <!-- 主区 -->
 <main class="container">
 
+  <!-- 学习状态栏 -->
+  <section class="status-bar" id="statusBar">
+    <div class="status-item" id="stLearn">📖 待学 <b>0</b></div>
+    <div class="status-item" id="stBox1">① <b>0</b></div>
+    <div class="status-item" id="stBox2">② <b>0</b></div>
+    <div class="status-item" id="stBox3">③ <b>0</b></div>
+    <div class="status-item done" id="stDone">✅ <b>0</b></div>
+  </section>
+
+  <!-- 设置面板 -->
+  <section class="settings-panel hidden" id="settingsPanel">
+    <label>每天学习新单词数：</label>
+    <input type="number" id="dailyInput" min="1" max="100" value="10">
+    <button class="btn-primary" id="dailySave">保存</button>
+    <p class="hint">学习规则：学完隔 1 天考 → 通过隔 3 天考 → 通过隔 7 天考 → 毕业。答错回到第①区重新开始。</p>
+  </section>
+
   <!-- 模式选择 -->
   <section class="mode-bar">
-    <button class="mode-btn active" data-mode="browse">📖 学习</button>
-    <button class="mode-btn" data-mode="meaning">✍️ 词义</button>
-    <button class="mode-btn" data-mode="spell">🔤 拼写</button>
-    <button class="mode-btn" data-mode="sentence">📝 例句</button>
-    <button class="mode-btn" data-mode="review">🔁 复习错词</button>
+    <button class="mode-btn active" data-mode="learn">📖 学习</button>
+    <button class="mode-btn" data-mode="box1">① 待考</button>
+    <button class="mode-btn" data-mode="box2">② 待考</button>
+    <button class="mode-btn" data-mode="box3">③ 待考</button>
   </section>
 
   <!-- 卡片区 -->
@@ -40,6 +57,17 @@
         <button class="mini-sound" id="sentSoundBtn" title="听例句">🔊</button>
       </div>
       <div class="card-cnsent hidden" id="cardCnSent"></div>
+    </div>
+
+    <!-- 学习模式：学会了按钮 -->
+    <div class="learn-area hidden" id="learnArea">
+      <button class="btn-learn" id="learnDoneBtn">✅ 学会了</button>
+    </div>
+
+    <!-- 待考模式：认识/不会 -->
+    <div class="quiz-area hidden" id="quizArea">
+      <button class="btn-know" id="knowBtn">✅ 认识</button>
+      <button class="btn-dontknow" id="dontKnowBtn">❌ 不会</button>
     </div>
 
     <!-- 拼写输入 -->
@@ -61,20 +89,19 @@
   <!-- 操作按钮 -->
   <section class="action-bar">
     <button class="btn-flip" id="flipBtn">👁️ 显示答案</button>
-    <button class="btn-dontknow hidden" id="dontKnowBtn">❌ 不会</button>
     <button class="btn-next" id="nextBtn">下一个 ➡️</button>
   </section>
 
   <!-- 结果面板 -->
   <section class="result-panel hidden" id="resultPanel">
-    <h2>🎉 本组完成！</h2>
+    <h2 id="resultTitle">🎉 完成！</h2>
     <p id="resultText"></p>
-    <button class="btn-primary" id="restartBtn">再练一组</button>
+    <button class="btn-primary" id="restartBtn">继续</button>
   </section>
 
 </main>
 
-<footer class="foot">千千专用 · 三年级升四年级词汇练习 · 本地语音版</footer>
+<footer class="foot">千千专用 · 三年级升四年级词汇练习 · 间隔记忆</footer>
 
 <script src="js/app.js"></script>
 </body>
