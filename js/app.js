@@ -31,6 +31,7 @@
   const cardCnSent = $('cardCnSent');
   const sentSoundBtn = $('sentSoundBtn');
   const flipBtn = $('flipBtn');
+  const dontKnowBtn = $('dontKnowBtn');
   const nextBtn = $('nextBtn');
   const progressText = $('progressText');
   const soundToggle = $('soundToggle');
@@ -170,6 +171,9 @@
       sentenceInput.focus();
     }
 
+    // 词义模式显示「不会」按钮
+    dontKnowBtn.classList.toggle('hidden', mode !== 'meaning');
+
     flipBtn.textContent = quiz ? '👁️ 显示答案' : '👁️ 隐藏答案';
     nextBtn.textContent = '下一个 ➡️';
     nextBtn.disabled = false;
@@ -252,11 +256,34 @@
   }
 
   function next() {
+    // 词义模式：未翻看答案直接点下一个 = 认识，标记为对
+    if (mode === 'meaning' && !flipped) {
+      markAnswer(true);
+    }
     if (idx < queue.length - 1) {
       idx++;
       render();
     } else {
       showResult();
+    }
+  }
+
+  // 词义模式：不会 → 记错词 + 显示答案 + 自动下一题
+  function dontKnow() {
+    const w = queue[idx];
+    if (!w || flipped) return;
+    markAnswer(false);
+    if (mode === 'meaning') {
+      // 标记已翻看答案，防止自动 next 时重复标记
+      flipped = true;
+      // 显示中文/例句答案并朗读
+      cardCn.classList.remove('hidden');
+      cardSent.classList.remove('hidden');
+      cardCnSent.classList.remove('hidden');
+      flipBtn.textContent = '🙈 隐藏答案';
+      playWord();
+      dontKnowBtn.disabled = true;
+      setTimeout(() => { dontKnowBtn.disabled = false; next(); }, 1600);
     }
   }
 
@@ -300,6 +327,7 @@
   cardWord.addEventListener('click', playWord);
   sentSoundBtn.addEventListener('click', (e) => { e.stopPropagation(); playSentence(); });
   flipBtn.addEventListener('click', flip);
+  dontKnowBtn.addEventListener('click', dontKnow);
   nextBtn.addEventListener('click', next);
 
   // 键盘：回车下一个，空格听发音

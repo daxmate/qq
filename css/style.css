@@ -190,7 +190,7 @@ input[type="text"]:focus { border-color: var(--primary); }
   gap: 12px;
   justify-content: center;
 }
-.btn-flip, .btn-next {
+.btn-flip, .btn-next, .btn-dontknow {
   border: none;
   border-radius: 30px;
   padding: 14px 28px;
@@ -199,6 +199,8 @@ input[type="text"]:focus { border-color: var(--primary); }
   font-weight: 700;
 }
 .btn-flip { background: var(--accent); color: #7a5c00; }
+.btn-dontknow { background: #e74c3c; color: #fff; }
+.btn-dontknow:disabled { opacity: 0.4; cursor: not-allowed; }
 .btn-next { background: var(--primary-dark); color: #fff; }
 .btn-next:disabled { opacity: 0.4; cursor: not-allowed; }
 
