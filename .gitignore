@@ -1,0 +1,4 @@
+.DS_Store
+gen_audio.log
+__pycache__/
+*.pyc

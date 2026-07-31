@@ -1,0 +1,4172 @@
+{
+ "total": 463,
+ "words": [
+  {
+   "id": 0,
+   "en": "near",
+   "cn": "在…附近",
+   "sent": "The school is near my home.",
+   "cn_sent": "学校在我家附近。",
+   "word_audio": "audio/w_000.mp3",
+   "sent_audio": "audio/s_000.mp3"
+  },
+  {
+   "id": 1,
+   "en": "subway",
+   "cn": "地铁",
+   "sent": "I go to work by subway.",
+   "cn_sent": "我坐地铁上班。",
+   "word_audio": "audio/w_001.mp3",
+   "sent_audio": "audio/s_001.mp3"
+  },
+  {
+   "id": 2,
+   "en": "potato",
+   "cn": "土豆",
+   "sent": "I like potatoes.",
+   "cn_sent": "我喜欢土豆。",
+   "word_audio": "audio/w_002.mp3",
+   "sent_audio": "audio/s_002.mp3"
+  },
+  {
+   "id": 3,
+   "en": "light",
+   "cn": "灯",
+   "sent": "The bag is light.",
+   "cn_sent": "书包很轻。",
+   "word_audio": "audio/w_003.mp3",
+   "sent_audio": "audio/s_003.mp3"
+  },
+  {
+   "id": 4,
+   "en": "ear",
+   "cn": "耳朵",
+   "sent": "My ears are big.",
+   "cn_sent": "我的耳朵很大。",
+   "word_audio": "audio/w_004.mp3",
+   "sent_audio": "audio/s_004.mp3"
+  },
+  {
+   "id": 5,
+   "en": "now",
+   "cn": "现在",
+   "sent": "Let's go now.",
+   "cn_sent": "我们现在走吧。",
+   "word_audio": "audio/w_005.mp3",
+   "sent_audio": "audio/s_005.mp3"
+  },
+  {
+   "id": 6,
+   "en": "PE",
+   "cn": "体育",
+   "sent": "We have PE on Friday.",
+   "cn_sent": "我们星期五有体育课。",
+   "word_audio": "audio/w_006.mp3",
+   "sent_audio": "audio/s_006.mp3"
+  },
+  {
+   "id": 7,
+   "en": "snake",
+   "cn": "蛇",
+   "sent": "The snake is long.",
+   "cn_sent": "蛇很长。",
+   "word_audio": "audio/w_007.mp3",
+   "sent_audio": "audio/s_007.mp3"
+  },
+  {
+   "id": 8,
+   "en": "horse",
+   "cn": "马",
+   "sent": "The horse can run fast.",
+   "cn_sent": "马跑得很快。",
+   "word_audio": "audio/w_008.mp3",
+   "sent_audio": "audio/s_008.mp3"
+  },
+  {
+   "id": 9,
+   "en": "brown",
+   "cn": "棕色",
+   "sent": "My shoes are brown.",
+   "cn_sent": "我的鞋子是棕色的。",
+   "word_audio": "audio/w_009.mp3",
+   "sent_audio": "audio/s_009.mp3"
+  },
+  {
+   "id": 10,
+   "en": "cute",
+   "cn": "可爱的",
+   "sent": "The baby is cute.",
+   "cn_sent": "婴儿很可爱。",
+   "word_audio": "audio/w_010.mp3",
+   "sent_audio": "audio/s_010.mp3"
+  },
+  {
+   "id": 11,
+   "en": "dirty",
+   "cn": "脏的",
+   "sent": "My hands are dirty.",
+   "cn_sent": "我的手脏了。",
+   "word_audio": "audio/w_011.mp3",
+   "sent_audio": "audio/s_011.mp3"
+  },
+  {
+   "id": 12,
+   "en": "wonderful",
+   "cn": "精彩的",
+   "sent": "The party is wonderful.",
+   "cn_sent": "聚会很棒。",
+   "word_audio": "audio/w_012.mp3",
+   "sent_audio": "audio/s_012.mp3"
+  },
+  {
+   "id": 13,
+   "en": "door",
+   "cn": "门",
+   "sent": "Close the door.",
+   "cn_sent": "关门。",
+   "word_audio": "audio/w_013.mp3",
+   "sent_audio": "audio/s_013.mp3"
+  },
+  {
+   "id": 14,
+   "en": "forty",
+   "cn": "四十",
+   "sent": "There are forty students.",
+   "cn_sent": "有四十个学生。",
+   "word_audio": "audio/w_014.mp3",
+   "sent_audio": "audio/s_014.mp3"
+  },
+  {
+   "id": 15,
+   "en": "heavy",
+   "cn": "重的",
+   "sent": "The box is heavy.",
+   "cn_sent": "箱子很重。",
+   "word_audio": "audio/w_015.mp3",
+   "sent_audio": "audio/s_015.mp3"
+  },
+  {
+   "id": 16,
+   "en": "help",
+   "cn": "帮助",
+   "sent": "Can you help me?",
+   "cn_sent": "你能帮我吗？",
+   "word_audio": "audio/w_016.mp3",
+   "sent_audio": "audio/s_016.mp3"
+  },
+  {
+   "id": 17,
+   "en": "let",
+   "cn": "让",
+   "sent": "Let me help you.",
+   "cn_sent": "让我帮你。",
+   "word_audio": "audio/w_017.mp3",
+   "sent_audio": "audio/s_017.mp3"
+  },
+  {
+   "id": 18,
+   "en": "hat",
+   "cn": "帽子",
+   "sent": "I have a red hat.",
+   "cn_sent": "我有一顶红帽子。",
+   "word_audio": "audio/w_018.mp3",
+   "sent_audio": "audio/s_018.mp3"
+  },
+  {
+   "id": 19,
+   "en": "watch",
+   "cn": "观看",
+   "sent": "I watch TV.",
+   "cn_sent": "我看电视。",
+   "word_audio": "audio/w_019.mp3",
+   "sent_audio": "audio/s_019.mp3"
+  },
+  {
+   "id": 20,
+   "en": "nineteen",
+   "cn": "十九",
+   "sent": "There are nineteen girls.",
+   "cn_sent": "有十九个女孩。",
+   "word_audio": "audio/w_020.mp3",
+   "sent_audio": "audio/s_020.mp3"
+  },
+  {
+   "id": 21,
+   "en": "hair",
+   "cn": "头发",
+   "sent": "Her hair is long.",
+   "cn_sent": "她的头发很长。",
+   "word_audio": "audio/w_021.mp3",
+   "sent_audio": "audio/s_021.mp3"
+  },
+  {
+   "id": 22,
+   "en": "water",
+   "cn": "水",
+   "sent": "I want some water.",
+   "cn_sent": "我想要一些水。",
+   "word_audio": "audio/w_022.mp3",
+   "sent_audio": "audio/s_022.mp3"
+  },
+  {
+   "id": 23,
+   "en": "eleven",
+   "cn": "十一",
+   "sent": "There are eleven students.",
+   "cn_sent": "有十一个学生。",
+   "word_audio": "audio/w_023.mp3",
+   "sent_audio": "audio/s_023.mp3"
+  },
+  {
+   "id": 24,
+   "en": "wind",
+   "cn": "风",
+   "sent": "The wind is strong.",
+   "cn_sent": "风很大。",
+   "word_audio": "audio/w_024.mp3",
+   "sent_audio": "audio/s_024.mp3"
+  },
+  {
+   "id": 25,
+   "en": "slow",
+   "cn": "慢的",
+   "sent": "The turtle is slow.",
+   "cn_sent": "乌龟很慢。",
+   "word_audio": "audio/w_025.mp3",
+   "sent_audio": "audio/s_025.mp3"
+  },
+  {
+   "id": 26,
+   "en": "teacher",
+   "cn": "老师",
+   "sent": "My teacher is nice.",
+   "cn_sent": "我的老师很好。",
+   "word_audio": "audio/w_026.mp3",
+   "sent_audio": "audio/s_026.mp3"
+  },
+  {
+   "id": 27,
+   "en": "sky",
+   "cn": "天空",
+   "sent": "The sky is blue.",
+   "cn_sent": "天空是蓝色的。",
+   "word_audio": "audio/w_027.mp3",
+   "sent_audio": "audio/s_027.mp3"
+  },
+  {
+   "id": 28,
+   "en": "key",
+   "cn": "钥匙",
+   "sent": "This is my key.",
+   "cn_sent": "这是我的钥匙。",
+   "word_audio": "audio/w_028.mp3",
+   "sent_audio": "audio/s_028.mp3"
+  },
+  {
+   "id": 29,
+   "en": "art",
+   "cn": "美术",
+   "sent": "I like art.",
+   "cn_sent": "我喜欢美术。",
+   "word_audio": "audio/w_029.mp3",
+   "sent_audio": "audio/s_029.mp3"
+  },
+  {
+   "id": 30,
+   "en": "say",
+   "cn": "说",
+   "sent": "Say hello to your teacher.",
+   "cn_sent": "向你的老师问好。",
+   "word_audio": "audio/w_030.mp3",
+   "sent_audio": "audio/s_030.mp3"
+  },
+  {
+   "id": 31,
+   "en": "grandma",
+   "cn": "奶奶/外婆",
+   "sent": "My grandma cooks well.",
+   "cn_sent": "我奶奶做饭好吃。",
+   "word_audio": "audio/w_031.mp3",
+   "sent_audio": "audio/s_031.mp3"
+  },
+  {
+   "id": 32,
+   "en": "ten",
+   "cn": "十",
+   "sent": "I have ten toes.",
+   "cn_sent": "我有十个脚趾。",
+   "word_audio": "audio/w_032.mp3",
+   "sent_audio": "audio/s_032.mp3"
+  },
+  {
+   "id": 33,
+   "en": "grade",
+   "cn": "年级",
+   "sent": "I am in Grade Four.",
+   "cn_sent": "我上四年级。",
+   "word_audio": "audio/w_033.mp3",
+   "sent_audio": "audio/s_033.mp3"
+  },
+  {
+   "id": 34,
+   "en": "there",
+   "cn": "那里",
+   "sent": "The book is there.",
+   "cn_sent": "书在那里。",
+   "word_audio": "audio/w_034.mp3",
+   "sent_audio": "audio/s_034.mp3"
+  },
+  {
+   "id": 35,
+   "en": "jacket",
+   "cn": "夹克",
+   "sent": "Put on your jacket.",
+   "cn_sent": "穿上你的夹克。",
+   "word_audio": "audio/w_035.mp3",
+   "sent_audio": "audio/s_035.mp3"
+  },
+  {
+   "id": 36,
+   "en": "rice",
+   "cn": "米饭",
+   "sent": "We eat rice for lunch.",
+   "cn_sent": "我们午饭吃米饭。",
+   "word_audio": "audio/w_036.mp3",
+   "sent_audio": "audio/s_036.mp3"
+  },
+  {
+   "id": 37,
+   "en": "take",
+   "cn": "拿",
+   "sent": "Take your bag.",
+   "cn_sent": "带上你的书包。",
+   "word_audio": "audio/w_037.mp3",
+   "sent_audio": "audio/s_037.mp3"
+  },
+  {
+   "id": 38,
+   "en": "grey",
+   "cn": "灰色",
+   "sent": "The elephant is grey.",
+   "cn_sent": "大象是灰色的。",
+   "word_audio": "audio/w_038.mp3",
+   "sent_audio": "audio/s_038.mp3"
+  },
+  {
+   "id": 39,
+   "en": "sick",
+   "cn": "生病的",
+   "sent": "He is sick.",
+   "cn_sent": "他生病了。",
+   "word_audio": "audio/w_039.mp3",
+   "sent_audio": "audio/s_039.mp3"
+  },
+  {
+   "id": 40,
+   "en": "in front of",
+   "cn": "在…前面",
+   "sent": "The teacher is in front of the blackboard.",
+   "cn_sent": "老师在黑板前面。",
+   "word_audio": "audio/w_040.mp3",
+   "sent_audio": "audio/s_040.mp3"
+  },
+  {
+   "id": 41,
+   "en": "beef",
+   "cn": "牛肉",
+   "sent": "I like beef noodles.",
+   "cn_sent": "我喜欢牛肉面。",
+   "word_audio": "audio/w_041.mp3",
+   "sent_audio": "audio/s_041.mp3"
+  },
+  {
+   "id": 42,
+   "en": "must",
+   "cn": "必须",
+   "sent": "You must go now.",
+   "cn_sent": "你现在必须走。",
+   "word_audio": "audio/w_042.mp3",
+   "sent_audio": "audio/s_042.mp3"
+  },
+  {
+   "id": 43,
+   "en": "easy",
+   "cn": "容易的",
+   "sent": "It is easy.",
+   "cn_sent": "这很容易。",
+   "word_audio": "audio/w_043.mp3",
+   "sent_audio": "audio/s_043.mp3"
+  },
+  {
+   "id": 44,
+   "en": "fly",
+   "cn": "飞",
+   "sent": "The bird can fly.",
+   "cn_sent": "鸟会飞。",
+   "word_audio": "audio/w_044.mp3",
+   "sent_audio": "audio/s_044.mp3"
+  },
+  {
+   "id": 45,
+   "en": "star",
+   "cn": "星星",
+   "sent": "I see stars at night.",
+   "cn_sent": "我晚上看到星星。",
+   "word_audio": "audio/w_045.mp3",
+   "sent_audio": "audio/s_045.mp3"
+  },
+  {
+   "id": 46,
+   "en": "Sunday",
+   "cn": "星期天",
+   "sent": "We have a picnic on Sunday.",
+   "cn_sent": "我们星期天去野餐。",
+   "word_audio": "audio/w_046.mp3",
+   "sent_audio": "audio/s_046.mp3"
+  },
+  {
+   "id": 47,
+   "en": "never",
+   "cn": "从不",
+   "sent": "I never eat candy at night.",
+   "cn_sent": "我晚上从不吃糖果。",
+   "word_audio": "audio/w_047.mp3",
+   "sent_audio": "audio/s_047.mp3"
+  },
+  {
+   "id": 48,
+   "en": "nice",
+   "cn": "好的",
+   "sent": "You are nice.",
+   "cn_sent": "你很好。",
+   "word_audio": "audio/w_048.mp3",
+   "sent_audio": "audio/s_048.mp3"
+  },
+  {
+   "id": 49,
+   "en": "hot",
+   "cn": "炎热的",
+   "sent": "It is hot in summer.",
+   "cn_sent": "夏天很热。",
+   "word_audio": "audio/w_049.mp3",
+   "sent_audio": "audio/s_049.mp3"
+  },
+  {
+   "id": 50,
+   "en": "me",
+   "cn": "我(宾格)",
+   "sent": "Give me the pen.",
+   "cn_sent": "把笔给我。",
+   "word_audio": "audio/w_050.mp3",
+   "sent_audio": "audio/s_050.mp3"
+  },
+  {
+   "id": 51,
+   "en": "gloves",
+   "cn": "手套",
+   "sent": "Put on your gloves.",
+   "cn_sent": "戴上你的手套。",
+   "word_audio": "audio/w_051.mp3",
+   "sent_audio": "audio/s_051.mp3"
+  },
+  {
+   "id": 52,
+   "en": "twenty",
+   "cn": "二十",
+   "sent": "I have twenty stickers.",
+   "cn_sent": "我有二十张贴纸。",
+   "word_audio": "audio/w_052.mp3",
+   "sent_audio": "audio/s_052.mp3"
+  },
+  {
+   "id": 53,
+   "en": "on",
+   "cn": "在…上面",
+   "sent": "The cat is on the sofa.",
+   "cn_sent": "猫在沙发上。",
+   "word_audio": "audio/w_053.mp3",
+   "sent_audio": "audio/s_053.mp3"
+  },
+  {
+   "id": 54,
+   "en": "those",
+   "cn": "那些",
+   "sent": "Those are pears.",
+   "cn_sent": "那些是梨。",
+   "word_audio": "audio/w_054.mp3",
+   "sent_audio": "audio/s_054.mp3"
+  },
+  {
+   "id": 55,
+   "en": "spoon",
+   "cn": "勺子",
+   "sent": "I need a spoon.",
+   "cn_sent": "我需要一个勺子。",
+   "word_audio": "audio/w_055.mp3",
+   "sent_audio": "audio/s_055.mp3"
+  },
+  {
+   "id": 56,
+   "en": "want",
+   "cn": "想要",
+   "sent": "I want some water.",
+   "cn_sent": "我想要一些水。",
+   "word_audio": "audio/w_056.mp3",
+   "sent_audio": "audio/s_056.mp3"
+  },
+  {
+   "id": 57,
+   "en": "father",
+   "cn": "爸爸",
+   "sent": "My father is a doctor.",
+   "cn_sent": "我爸爸是医生。",
+   "word_audio": "audio/w_057.mp3",
+   "sent_audio": "audio/s_057.mp3"
+  },
+  {
+   "id": 58,
+   "en": "very",
+   "cn": "非常",
+   "sent": "It is very hot.",
+   "cn_sent": "天气很热。",
+   "word_audio": "audio/w_058.mp3",
+   "sent_audio": "audio/s_058.mp3"
+  },
+  {
+   "id": 59,
+   "en": "read",
+   "cn": "读",
+   "sent": "I read a story.",
+   "cn_sent": "我读一个故事。",
+   "word_audio": "audio/w_059.mp3",
+   "sent_audio": "audio/s_059.mp3"
+  },
+  {
+   "id": 60,
+   "en": "go",
+   "cn": "去",
+   "sent": "Let's go to school.",
+   "cn_sent": "我们去上学吧。",
+   "word_audio": "audio/w_060.mp3",
+   "sent_audio": "audio/s_060.mp3"
+  },
+  {
+   "id": 61,
+   "en": "toe",
+   "cn": "脚趾",
+   "sent": "I have ten toes.",
+   "cn_sent": "我有十个脚趾。",
+   "word_audio": "audio/w_061.mp3",
+   "sent_audio": "audio/s_061.mp3"
+  },
+  {
+   "id": 62,
+   "en": "tea",
+   "cn": "茶",
+   "sent": "I drink tea.",
+   "cn_sent": "我喝茶。",
+   "word_audio": "audio/w_062.mp3",
+   "sent_audio": "audio/s_062.mp3"
+  },
+  {
+   "id": 63,
+   "en": "party",
+   "cn": "聚会",
+   "sent": "We have a party.",
+   "cn_sent": "我们开派对。",
+   "word_audio": "audio/w_063.mp3",
+   "sent_audio": "audio/s_063.mp3"
+  },
+  {
+   "id": 64,
+   "en": "fifteen",
+   "cn": "十五",
+   "sent": "I can count to fifteen.",
+   "cn_sent": "我能数到十五。",
+   "word_audio": "audio/w_064.mp3",
+   "sent_audio": "audio/s_064.mp3"
+  },
+  {
+   "id": 65,
+   "en": "cake",
+   "cn": "蛋糕",
+   "sent": "The cake is sweet.",
+   "cn_sent": "蛋糕很甜。",
+   "word_audio": "audio/w_065.mp3",
+   "sent_audio": "audio/s_065.mp3"
+  },
+  {
+   "id": 66,
+   "en": "does",
+   "cn": "做(三单)",
+   "sent": "She does her homework.",
+   "cn_sent": "她做作业。",
+   "word_audio": "audio/w_066.mp3",
+   "sent_audio": "audio/s_066.mp3"
+  },
+  {
+   "id": 67,
+   "en": "man",
+   "cn": "男人",
+   "sent": "The man is strong.",
+   "cn_sent": "这个男人很强壮。",
+   "word_audio": "audio/w_067.mp3",
+   "sent_audio": "audio/s_067.mp3"
+  },
+  {
+   "id": 68,
+   "en": "tomato",
+   "cn": "西红柿",
+   "sent": "The tomato is red.",
+   "cn_sent": "西红柿是红色的。",
+   "word_audio": "audio/w_068.mp3",
+   "sent_audio": "audio/s_068.mp3"
+  },
+  {
+   "id": 69,
+   "en": "egg",
+   "cn": "鸡蛋",
+   "sent": "I eat an egg.",
+   "cn_sent": "我吃一个鸡蛋。",
+   "word_audio": "audio/w_069.mp3",
+   "sent_audio": "audio/s_069.mp3"
+  },
+  {
+   "id": 70,
+   "en": "what",
+   "cn": "什么",
+   "sent": "What is this?",
+   "cn_sent": "这是什么？",
+   "word_audio": "audio/w_070.mp3",
+   "sent_audio": "audio/s_070.mp3"
+  },
+  {
+   "id": 71,
+   "en": "crayon",
+   "cn": "蜡笔",
+   "sent": "I draw with crayons.",
+   "cn_sent": "我用蜡笔画画。",
+   "word_audio": "audio/w_071.mp3",
+   "sent_audio": "audio/s_071.mp3"
+  },
+  {
+   "id": 72,
+   "en": "hen",
+   "cn": "母鸡",
+   "sent": "The hen has eggs.",
+   "cn_sent": "母鸡下蛋。",
+   "word_audio": "audio/w_072.mp3",
+   "sent_audio": "audio/s_072.mp3"
+  },
+  {
+   "id": 73,
+   "en": "basketball",
+   "cn": "篮球",
+   "sent": "He plays basketball.",
+   "cn_sent": "他打篮球。",
+   "word_audio": "audio/w_073.mp3",
+   "sent_audio": "audio/s_073.mp3"
+  },
+  {
+   "id": 74,
+   "en": "why",
+   "cn": "为什么",
+   "sent": "Why are you sad?",
+   "cn_sent": "你为什么难过？",
+   "word_audio": "audio/w_074.mp3",
+   "sent_audio": "audio/s_074.mp3"
+  },
+  {
+   "id": 75,
+   "en": "eraser",
+   "cn": "橡皮",
+   "sent": "This is my eraser.",
+   "cn_sent": "这是我的橡皮。",
+   "word_audio": "audio/w_075.mp3",
+   "sent_audio": "audio/s_075.mp3"
+  },
+  {
+   "id": 76,
+   "en": "four",
+   "cn": "四",
+   "sent": "There are four chairs.",
+   "cn_sent": "有四把椅子。",
+   "word_audio": "audio/w_076.mp3",
+   "sent_audio": "audio/s_076.mp3"
+  },
+  {
+   "id": 77,
+   "en": "bike",
+   "cn": "自行车",
+   "sent": "I ride a bike.",
+   "cn_sent": "我骑自行车。",
+   "word_audio": "audio/w_077.mp3",
+   "sent_audio": "audio/s_077.mp3"
+  },
+  {
+   "id": 78,
+   "en": "do",
+   "cn": "做",
+   "sent": "I do my homework.",
+   "cn_sent": "我做作业。",
+   "word_audio": "audio/w_078.mp3",
+   "sent_audio": "audio/s_078.mp3"
+  },
+  {
+   "id": 79,
+   "en": "cloud",
+   "cn": "云",
+   "sent": "The cloud is white.",
+   "cn_sent": "云是白色的。",
+   "word_audio": "audio/w_079.mp3",
+   "sent_audio": "audio/s_079.mp3"
+  },
+  {
+   "id": 80,
+   "en": "strong",
+   "cn": "强壮的",
+   "sent": "He is strong.",
+   "cn_sent": "他很强壮。",
+   "word_audio": "audio/w_080.mp3",
+   "sent_audio": "audio/s_080.mp3"
+  },
+  {
+   "id": 81,
+   "en": "bad",
+   "cn": "坏的",
+   "sent": "It is bad for you.",
+   "cn_sent": "这对你不好。",
+   "word_audio": "audio/w_081.mp3",
+   "sent_audio": "audio/s_081.mp3"
+  },
+  {
+   "id": 82,
+   "en": "picture",
+   "cn": "图画",
+   "sent": "The picture is nice.",
+   "cn_sent": "这幅画很漂亮。",
+   "word_audio": "audio/w_082.mp3",
+   "sent_audio": "audio/s_082.mp3"
+  },
+  {
+   "id": 83,
+   "en": "finger",
+   "cn": "手指",
+   "sent": "I have ten fingers.",
+   "cn_sent": "我有十根手指。",
+   "word_audio": "audio/w_083.mp3",
+   "sent_audio": "audio/s_083.mp3"
+  },
+  {
+   "id": 84,
+   "en": "minute",
+   "cn": "分钟",
+   "sent": "Wait a minute.",
+   "cn_sent": "等一下。",
+   "word_audio": "audio/w_084.mp3",
+   "sent_audio": "audio/s_084.mp3"
+  },
+  {
+   "id": 85,
+   "en": "lamp",
+   "cn": "台灯",
+   "sent": "The lamp is on the desk.",
+   "cn_sent": "台灯在书桌上。",
+   "word_audio": "audio/w_085.mp3",
+   "sent_audio": "audio/s_085.mp3"
+  },
+  {
+   "id": 86,
+   "en": "dangerous",
+   "cn": "危险的",
+   "sent": "It is dangerous.",
+   "cn_sent": "这很危险。",
+   "word_audio": "audio/w_086.mp3",
+   "sent_audio": "audio/s_086.mp3"
+  },
+  {
+   "id": 87,
+   "en": "next to",
+   "cn": "在…旁边",
+   "sent": "My desk is next to the window.",
+   "cn_sent": "我的书桌在窗户旁边。",
+   "word_audio": "audio/w_087.mp3",
+   "sent_audio": "audio/s_087.mp3"
+  },
+  {
+   "id": 88,
+   "en": "fan",
+   "cn": "风扇",
+   "sent": "The fan is on.",
+   "cn_sent": "风扇开着。",
+   "word_audio": "audio/w_088.mp3",
+   "sent_audio": "audio/s_088.mp3"
+  },
+  {
+   "id": 89,
+   "en": "her",
+   "cn": "她的",
+   "sent": "Her hair is long.",
+   "cn_sent": "她的头发很长。",
+   "word_audio": "audio/w_089.mp3",
+   "sent_audio": "audio/s_089.mp3"
+  },
+  {
+   "id": 90,
+   "en": "hi",
+   "cn": "嗨",
+   "sent": "Hi, Tom!",
+   "cn_sent": "嗨，汤姆！",
+   "word_audio": "audio/w_090.mp3",
+   "sent_audio": "audio/s_090.mp3"
+  },
+  {
+   "id": 91,
+   "en": "he",
+   "cn": "他",
+   "sent": "He is my brother.",
+   "cn_sent": "他是我的哥哥。",
+   "word_audio": "audio/w_091.mp3",
+   "sent_audio": "audio/s_091.mp3"
+  },
+  {
+   "id": 92,
+   "en": "moon",
+   "cn": "月亮",
+   "sent": "The moon is big tonight.",
+   "cn_sent": "今晚月亮很大。",
+   "word_audio": "audio/w_092.mp3",
+   "sent_audio": "audio/s_092.mp3"
+  },
+  {
+   "id": 93,
+   "en": "map",
+   "cn": "地图",
+   "sent": "Look at the map.",
+   "cn_sent": "看这张地图。",
+   "word_audio": "audio/w_093.mp3",
+   "sent_audio": "audio/s_093.mp3"
+  },
+  {
+   "id": 94,
+   "en": "old",
+   "cn": "老的/旧的",
+   "sent": "My grandpa is old.",
+   "cn_sent": "我爷爷年纪大了。",
+   "word_audio": "audio/w_094.mp3",
+   "sent_audio": "audio/s_094.mp3"
+  },
+  {
+   "id": 95,
+   "en": "sofa",
+   "cn": "沙发",
+   "sent": "The cat is on the sofa.",
+   "cn_sent": "猫在沙发上。",
+   "word_audio": "audio/w_095.mp3",
+   "sent_audio": "audio/s_095.mp3"
+  },
+  {
+   "id": 96,
+   "en": "free",
+   "cn": "空闲的",
+   "sent": "I am free today.",
+   "cn_sent": "我今天有空。",
+   "word_audio": "audio/w_096.mp3",
+   "sent_audio": "audio/s_096.mp3"
+  },
+  {
+   "id": 97,
+   "en": "write",
+   "cn": "写",
+   "sent": "I write a letter.",
+   "cn_sent": "我写一封信。",
+   "word_audio": "audio/w_097.mp3",
+   "sent_audio": "audio/s_097.mp3"
+  },
+  {
+   "id": 98,
+   "en": "study",
+   "cn": "书房",
+   "sent": "I study English.",
+   "cn_sent": "我学英语。",
+   "word_audio": "audio/w_098.mp3",
+   "sent_audio": "audio/s_098.mp3"
+  },
+  {
+   "id": 99,
+   "en": "hour",
+   "cn": "小时",
+   "sent": "I watch TV for an hour.",
+   "cn_sent": "我看一小时电视。",
+   "word_audio": "audio/w_099.mp3",
+   "sent_audio": "audio/s_099.mp3"
+  },
+  {
+   "id": 100,
+   "en": "arm",
+   "cn": "胳膊",
+   "sent": "Raise your arms.",
+   "cn_sent": "举起你的胳膊。",
+   "word_audio": "audio/w_100.mp3",
+   "sent_audio": "audio/s_100.mp3"
+  },
+  {
+   "id": 101,
+   "en": "day",
+   "cn": "天",
+   "sent": "Have a nice day.",
+   "cn_sent": "祝你今天愉快。",
+   "word_audio": "audio/w_101.mp3",
+   "sent_audio": "audio/s_101.mp3"
+  },
+  {
+   "id": 102,
+   "en": "grass",
+   "cn": "草",
+   "sent": "The grass is green.",
+   "cn_sent": "草是绿色的。",
+   "word_audio": "audio/w_102.mp3",
+   "sent_audio": "audio/s_102.mp3"
+  },
+  {
+   "id": 103,
+   "en": "Chinese",
+   "cn": "语文/中文",
+   "sent": "I speak Chinese.",
+   "cn_sent": "我说中文。",
+   "word_audio": "audio/w_103.mp3",
+   "sent_audio": "audio/s_103.mp3"
+  },
+  {
+   "id": 104,
+   "en": "bedroom",
+   "cn": "卧室",
+   "sent": "I sleep in my bedroom.",
+   "cn_sent": "我在卧室睡觉。",
+   "word_audio": "audio/w_104.mp3",
+   "sent_audio": "audio/s_104.mp3"
+  },
+  {
+   "id": 105,
+   "en": "policeman",
+   "cn": "警察",
+   "sent": "The policeman is tall.",
+   "cn_sent": "警察很高。",
+   "word_audio": "audio/w_105.mp3",
+   "sent_audio": "audio/s_105.mp3"
+  },
+  {
+   "id": 106,
+   "en": "chicken",
+   "cn": "鸡",
+   "sent": "The chicken is yellow.",
+   "cn_sent": "小鸡是黄色的。",
+   "word_audio": "audio/w_106.mp3",
+   "sent_audio": "audio/s_106.mp3"
+  },
+  {
+   "id": 107,
+   "en": "sandwich",
+   "cn": "三明治",
+   "sent": "I have a sandwich for lunch.",
+   "cn_sent": "我午饭吃一个三明治。",
+   "word_audio": "audio/w_107.mp3",
+   "sent_audio": "audio/s_107.mp3"
+  },
+  {
+   "id": 108,
+   "en": "clock",
+   "cn": "钟",
+   "sent": "The clock is on the wall.",
+   "cn_sent": "钟在墙上。",
+   "word_audio": "audio/w_108.mp3",
+   "sent_audio": "audio/s_108.mp3"
+  },
+  {
+   "id": 109,
+   "en": "fast",
+   "cn": "快的",
+   "sent": "The horse runs fast.",
+   "cn_sent": "马跑得快。",
+   "word_audio": "audio/w_109.mp3",
+   "sent_audio": "audio/s_109.mp3"
+  },
+  {
+   "id": 110,
+   "en": "great",
+   "cn": "棒极了",
+   "sent": "That's great!",
+   "cn_sent": "太棒了！",
+   "word_audio": "audio/w_110.mp3",
+   "sent_audio": "audio/s_110.mp3"
+  },
+  {
+   "id": 111,
+   "en": "playground",
+   "cn": "操场",
+   "sent": "We play on the playground.",
+   "cn_sent": "我们在操场上玩。",
+   "word_audio": "audio/w_111.mp3",
+   "sent_audio": "audio/s_111.mp3"
+  },
+  {
+   "id": 112,
+   "en": "give",
+   "cn": "给",
+   "sent": "Give me the book.",
+   "cn_sent": "把书给我。",
+   "word_audio": "audio/w_112.mp3",
+   "sent_audio": "audio/s_112.mp3"
+  },
+  {
+   "id": 113,
+   "en": "winter",
+   "cn": "冬天",
+   "sent": "It snows in winter.",
+   "cn_sent": "冬天下雪。",
+   "word_audio": "audio/w_113.mp3",
+   "sent_audio": "audio/s_113.mp3"
+  },
+  {
+   "id": 114,
+   "en": "colour",
+   "cn": "颜色",
+   "sent": "What colour is it?",
+   "cn_sent": "它是什么颜色？",
+   "word_audio": "audio/w_114.mp3",
+   "sent_audio": "audio/s_114.mp3"
+  },
+  {
+   "id": 115,
+   "en": "face",
+   "cn": "脸",
+   "sent": "Wash your face.",
+   "cn_sent": "洗洗你的脸。",
+   "word_audio": "audio/w_115.mp3",
+   "sent_audio": "audio/s_115.mp3"
+  },
+  {
+   "id": 116,
+   "en": "green beans",
+   "cn": "豆角",
+   "sent": "I like green beans.",
+   "cn_sent": "我喜欢豆角。",
+   "word_audio": "audio/w_116.mp3",
+   "sent_audio": "audio/s_116.mp3"
+  },
+  {
+   "id": 117,
+   "en": "shirt",
+   "cn": "衬衫",
+   "sent": "I wear a white shirt.",
+   "cn_sent": "我穿一件白衬衫。",
+   "word_audio": "audio/w_117.mp3",
+   "sent_audio": "audio/s_117.mp3"
+  },
+  {
+   "id": 118,
+   "en": "any",
+   "cn": "任何/一些",
+   "sent": "Do you have any water?",
+   "cn_sent": "你有水吗？",
+   "word_audio": "audio/w_118.mp3",
+   "sent_audio": "audio/s_118.mp3"
+  },
+  {
+   "id": 119,
+   "en": "dance",
+   "cn": "跳舞",
+   "sent": "We dance at the party.",
+   "cn_sent": "我们在聚会上跳舞。",
+   "word_audio": "audio/w_119.mp3",
+   "sent_audio": "audio/s_119.mp3"
+  },
+  {
+   "id": 120,
+   "en": "coffee",
+   "cn": "咖啡",
+   "sent": "My father likes coffee.",
+   "cn_sent": "我爸爸喜欢咖啡。",
+   "word_audio": "audio/w_120.mp3",
+   "sent_audio": "audio/s_120.mp3"
+  },
+  {
+   "id": 121,
+   "en": "lake",
+   "cn": "湖",
+   "sent": "We swim in the lake.",
+   "cn_sent": "我们在湖里游泳。",
+   "word_audio": "audio/w_121.mp3",
+   "sent_audio": "audio/s_121.mp3"
+  },
+  {
+   "id": 122,
+   "en": "skirt",
+   "cn": "裙子",
+   "sent": "Her skirt is pink.",
+   "cn_sent": "她的裙子是粉色的。",
+   "word_audio": "audio/w_122.mp3",
+   "sent_audio": "audio/s_122.mp3"
+  },
+  {
+   "id": 123,
+   "en": "toy",
+   "cn": "玩具",
+   "sent": "I have a toy car.",
+   "cn_sent": "我有一个玩具车。",
+   "word_audio": "audio/w_123.mp3",
+   "sent_audio": "audio/s_123.mp3"
+  },
+  {
+   "id": 124,
+   "en": "know",
+   "cn": "知道",
+   "sent": "I know the answer.",
+   "cn_sent": "我知道答案。",
+   "word_audio": "audio/w_124.mp3",
+   "sent_audio": "audio/s_124.mp3"
+  },
+  {
+   "id": 125,
+   "en": "thirsty",
+   "cn": "渴的",
+   "sent": "I am thirsty.",
+   "cn_sent": "我渴了。",
+   "word_audio": "audio/w_125.mp3",
+   "sent_audio": "audio/s_125.mp3"
+  },
+  {
+   "id": 126,
+   "en": "your",
+   "cn": "你的/你们的",
+   "sent": "Is this your bag?",
+   "cn_sent": "这是你的书包吗？",
+   "word_audio": "audio/w_126.mp3",
+   "sent_audio": "audio/s_126.mp3"
+  },
+  {
+   "id": 127,
+   "en": "family",
+   "cn": "家庭",
+   "sent": "I love my family.",
+   "cn_sent": "我爱我的家。",
+   "word_audio": "audio/w_127.mp3",
+   "sent_audio": "audio/s_127.mp3"
+  },
+  {
+   "id": 128,
+   "en": "sit",
+   "cn": "坐",
+   "sent": "Sit down, please.",
+   "cn_sent": "请坐。",
+   "word_audio": "audio/w_128.mp3",
+   "sent_audio": "audio/s_128.mp3"
+  },
+  {
+   "id": 129,
+   "en": "new",
+   "cn": "新的",
+   "sent": "I have a new pen.",
+   "cn_sent": "我有一支新笔。",
+   "word_audio": "audio/w_129.mp3",
+   "sent_audio": "audio/s_129.mp3"
+  },
+  {
+   "id": 130,
+   "en": "has",
+   "cn": "有(三单)",
+   "sent": "She has long hair.",
+   "cn_sent": "她有长头发。",
+   "word_audio": "audio/w_130.mp3",
+   "sent_audio": "audio/s_130.mp3"
+  },
+  {
+   "id": 131,
+   "en": "rabbit",
+   "cn": "兔子",
+   "sent": "The rabbit has long ears.",
+   "cn_sent": "兔子有长耳朵。",
+   "word_audio": "audio/w_131.mp3",
+   "sent_audio": "audio/s_131.mp3"
+  },
+  {
+   "id": 132,
+   "en": "grandpa",
+   "cn": "爷爷/外公",
+   "sent": "My grandpa is old.",
+   "cn_sent": "我爷爷年纪大了。",
+   "word_audio": "audio/w_132.mp3",
+   "sent_audio": "audio/s_132.mp3"
+  },
+  {
+   "id": 133,
+   "en": "taxi",
+   "cn": "出租车",
+   "sent": "We take a taxi.",
+   "cn_sent": "我们坐出租车。",
+   "word_audio": "audio/w_133.mp3",
+   "sent_audio": "audio/s_133.mp3"
+  },
+  {
+   "id": 134,
+   "en": "table",
+   "cn": "桌子",
+   "sent": "The food is on the table.",
+   "cn_sent": "食物在桌子上。",
+   "word_audio": "audio/w_134.mp3",
+   "sent_audio": "audio/s_134.mp3"
+  },
+  {
+   "id": 135,
+   "en": "juice",
+   "cn": "果汁",
+   "sent": "I like apple juice.",
+   "cn_sent": "我喜欢苹果汁。",
+   "word_audio": "audio/w_135.mp3",
+   "sent_audio": "audio/s_135.mp3"
+  },
+  {
+   "id": 136,
+   "en": "sixteen",
+   "cn": "十六",
+   "sent": "My sister is sixteen.",
+   "cn_sent": "我姐姐十六岁。",
+   "word_audio": "audio/w_136.mp3",
+   "sent_audio": "audio/s_136.mp3"
+  },
+  {
+   "id": 137,
+   "en": "blue",
+   "cn": "蓝色",
+   "sent": "The sky is blue.",
+   "cn_sent": "天空是蓝色的。",
+   "word_audio": "audio/w_137.mp3",
+   "sent_audio": "audio/s_137.mp3"
+  },
+  {
+   "id": 138,
+   "en": "time",
+   "cn": "时间",
+   "sent": "What time is it?",
+   "cn_sent": "几点了？",
+   "word_audio": "audio/w_138.mp3",
+   "sent_audio": "audio/s_138.mp3"
+  },
+  {
+   "id": 139,
+   "en": "sport",
+   "cn": "运动",
+   "sent": "I like sports.",
+   "cn_sent": "我喜欢运动。",
+   "word_audio": "audio/w_139.mp3",
+   "sent_audio": "audio/s_139.mp3"
+  },
+  {
+   "id": 140,
+   "en": "floor",
+   "cn": "地板",
+   "sent": "The floor is clean.",
+   "cn_sent": "地板很干净。",
+   "word_audio": "audio/w_140.mp3",
+   "sent_audio": "audio/s_140.mp3"
+  },
+  {
+   "id": 141,
+   "en": "bathroom",
+   "cn": "浴室",
+   "sent": "I wash my face in the bathroom.",
+   "cn_sent": "我在浴室洗脸。",
+   "word_audio": "audio/w_141.mp3",
+   "sent_audio": "audio/s_141.mp3"
+  },
+  {
+   "id": 142,
+   "en": "ready",
+   "cn": "准备好的",
+   "sent": "Are you ready?",
+   "cn_sent": "你准备好了吗？",
+   "word_audio": "audio/w_142.mp3",
+   "sent_audio": "audio/s_142.mp3"
+  },
+  {
+   "id": 143,
+   "en": "pants",
+   "cn": "裤子",
+   "sent": "These pants are long.",
+   "cn_sent": "这条裤子很长。",
+   "word_audio": "audio/w_143.mp3",
+   "sent_audio": "audio/s_143.mp3"
+  },
+  {
+   "id": 144,
+   "en": "mountain",
+   "cn": "山",
+   "sent": "The mountain is high.",
+   "cn_sent": "山很高。",
+   "word_audio": "audio/w_144.mp3",
+   "sent_audio": "audio/s_144.mp3"
+  },
+  {
+   "id": 145,
+   "en": "cat",
+   "cn": "猫",
+   "sent": "The cat is cute.",
+   "cn_sent": "猫很可爱。",
+   "word_audio": "audio/w_145.mp3",
+   "sent_audio": "audio/s_145.mp3"
+  },
+  {
+   "id": 146,
+   "en": "doctor",
+   "cn": "医生",
+   "sent": "The doctor helps people.",
+   "cn_sent": "医生帮助人们。",
+   "word_audio": "audio/w_146.mp3",
+   "sent_audio": "audio/s_146.mp3"
+  },
+  {
+   "id": 147,
+   "en": "bird",
+   "cn": "鸟",
+   "sent": "The bird can fly.",
+   "cn_sent": "鸟会飞。",
+   "word_audio": "audio/w_147.mp3",
+   "sent_audio": "audio/s_147.mp3"
+  },
+  {
+   "id": 148,
+   "en": "fat",
+   "cn": "胖的",
+   "sent": "The pig is fat.",
+   "cn_sent": "猪很胖。",
+   "word_audio": "audio/w_148.mp3",
+   "sent_audio": "audio/s_148.mp3"
+  },
+  {
+   "id": 149,
+   "en": "wall",
+   "cn": "墙",
+   "sent": "The wall is white.",
+   "cn_sent": "墙是白色的。",
+   "word_audio": "audio/w_149.mp3",
+   "sent_audio": "audio/s_149.mp3"
+  },
+  {
+   "id": 150,
+   "en": "nurse",
+   "cn": "护士",
+   "sent": "The nurse is busy.",
+   "cn_sent": "护士很忙。",
+   "word_audio": "audio/w_150.mp3",
+   "sent_audio": "audio/s_150.mp3"
+  },
+  {
+   "id": 151,
+   "en": "student",
+   "cn": "学生",
+   "sent": "I am a student.",
+   "cn_sent": "我是学生。",
+   "word_audio": "audio/w_151.mp3",
+   "sent_audio": "audio/s_151.mp3"
+  },
+  {
+   "id": 152,
+   "en": "pig",
+   "cn": "猪",
+   "sent": "The pig is fat.",
+   "cn_sent": "猪很胖。",
+   "word_audio": "audio/w_152.mp3",
+   "sent_audio": "audio/s_152.mp3"
+  },
+  {
+   "id": 153,
+   "en": "black",
+   "cn": "黑色",
+   "sent": "I like the black cat.",
+   "cn_sent": "我喜欢那只黑猫。",
+   "word_audio": "audio/w_153.mp3",
+   "sent_audio": "audio/s_153.mp3"
+  },
+  {
+   "id": 154,
+   "en": "how",
+   "cn": "怎样",
+   "sent": "How are you?",
+   "cn_sent": "你好吗？",
+   "word_audio": "audio/w_154.mp3",
+   "sent_audio": "audio/s_154.mp3"
+  },
+  {
+   "id": 155,
+   "en": "drink",
+   "cn": "喝",
+   "sent": "I drink milk.",
+   "cn_sent": "我喝牛奶。",
+   "word_audio": "audio/w_155.mp3",
+   "sent_audio": "audio/s_155.mp3"
+  },
+  {
+   "id": 156,
+   "en": "afternoon",
+   "cn": "下午",
+   "sent": "Good afternoon.",
+   "cn_sent": "下午好。",
+   "word_audio": "audio/w_156.mp3",
+   "sent_audio": "audio/s_156.mp3"
+  },
+  {
+   "id": 157,
+   "en": "people",
+   "cn": "人们",
+   "sent": "Many people like it.",
+   "cn_sent": "很多人喜欢它。",
+   "word_audio": "audio/w_157.mp3",
+   "sent_audio": "audio/s_157.mp3"
+  },
+  {
+   "id": 158,
+   "en": "tall",
+   "cn": "高的",
+   "sent": "My father is tall.",
+   "cn_sent": "我爸爸很高。",
+   "word_audio": "audio/w_158.mp3",
+   "sent_audio": "audio/s_158.mp3"
+  },
+  {
+   "id": 159,
+   "en": "pen",
+   "cn": "钢笔",
+   "sent": "I have a blue pen.",
+   "cn_sent": "我有一支蓝笔。",
+   "word_audio": "audio/w_159.mp3",
+   "sent_audio": "audio/s_159.mp3"
+  },
+  {
+   "id": 160,
+   "en": "bread",
+   "cn": "面包",
+   "sent": "I eat bread for breakfast.",
+   "cn_sent": "我早餐吃面包。",
+   "word_audio": "audio/w_160.mp3",
+   "sent_audio": "audio/s_160.mp3"
+  },
+  {
+   "id": 161,
+   "en": "seven",
+   "cn": "七",
+   "sent": "We have seven days in a week.",
+   "cn_sent": "一周有七天。",
+   "word_audio": "audio/w_161.mp3",
+   "sent_audio": "audio/s_161.mp3"
+  },
+  {
+   "id": 162,
+   "en": "some",
+   "cn": "一些",
+   "sent": "I have some books.",
+   "cn_sent": "我有一些书。",
+   "word_audio": "audio/w_162.mp3",
+   "sent_audio": "audio/s_162.mp3"
+  },
+  {
+   "id": 163,
+   "en": "who",
+   "cn": "谁",
+   "sent": "Who is she?",
+   "cn_sent": "她是谁？",
+   "word_audio": "audio/w_163.mp3",
+   "sent_audio": "audio/s_163.mp3"
+  },
+  {
+   "id": 164,
+   "en": "knife",
+   "cn": "刀",
+   "sent": "The knife is sharp.",
+   "cn_sent": "刀很锋利。",
+   "word_audio": "audio/w_164.mp3",
+   "sent_audio": "audio/s_164.mp3"
+  },
+  {
+   "id": 165,
+   "en": "sheep",
+   "cn": "绵羊",
+   "sent": "The sheep is white.",
+   "cn_sent": "绵羊是白色的。",
+   "word_audio": "audio/w_165.mp3",
+   "sent_audio": "audio/s_165.mp3"
+  },
+  {
+   "id": 166,
+   "en": "shorts",
+   "cn": "短裤",
+   "sent": "He wears shorts in summer.",
+   "cn_sent": "他夏天穿短裤。",
+   "word_audio": "audio/w_166.mp3",
+   "sent_audio": "audio/s_166.mp3"
+  },
+  {
+   "id": 167,
+   "en": "banana",
+   "cn": "香蕉",
+   "sent": "The banana is yellow.",
+   "cn_sent": "香蕉是黄色的。",
+   "word_audio": "audio/w_167.mp3",
+   "sent_audio": "audio/s_167.mp3"
+  },
+  {
+   "id": 168,
+   "en": "hundred",
+   "cn": "百",
+   "sent": "I have one hundred yuan.",
+   "cn_sent": "我有一百元。",
+   "word_audio": "audio/w_168.mp3",
+   "sent_audio": "audio/s_168.mp3"
+  },
+  {
+   "id": 169,
+   "en": "number",
+   "cn": "号码/数字",
+   "sent": "My number is three.",
+   "cn_sent": "我的号码是三。",
+   "word_audio": "audio/w_169.mp3",
+   "sent_audio": "audio/s_169.mp3"
+  },
+  {
+   "id": 170,
+   "en": "speak",
+   "cn": "说话",
+   "sent": "I speak Chinese.",
+   "cn_sent": "我说中文。",
+   "word_audio": "audio/w_170.mp3",
+   "sent_audio": "audio/s_170.mp3"
+  },
+  {
+   "id": 171,
+   "en": "make",
+   "cn": "制作",
+   "sent": "I make a cake.",
+   "cn_sent": "我做蛋糕。",
+   "word_audio": "audio/w_171.mp3",
+   "sent_audio": "audio/s_171.mp3"
+  },
+  {
+   "id": 172,
+   "en": "red",
+   "cn": "红色",
+   "sent": "My bag is red.",
+   "cn_sent": "我的书包是红色的。",
+   "word_audio": "audio/w_172.mp3",
+   "sent_audio": "audio/s_172.mp3"
+  },
+  {
+   "id": 173,
+   "en": "duck",
+   "cn": "鸭子",
+   "sent": "The duck can swim.",
+   "cn_sent": "鸭子会游泳。",
+   "word_audio": "audio/w_173.mp3",
+   "sent_audio": "audio/s_173.mp3"
+  },
+  {
+   "id": 174,
+   "en": "school",
+   "cn": "学校",
+   "sent": "I go to school at seven.",
+   "cn_sent": "我七点去上学。",
+   "word_audio": "audio/w_174.mp3",
+   "sent_audio": "audio/s_174.mp3"
+  },
+  {
+   "id": 175,
+   "en": "cousin",
+   "cn": "表/堂兄弟姐妹",
+   "sent": "My cousin is my friend.",
+   "cn_sent": "我表弟是我的朋友。",
+   "word_audio": "audio/w_175.mp3",
+   "sent_audio": "audio/s_175.mp3"
+  },
+  {
+   "id": 176,
+   "en": "white",
+   "cn": "白色",
+   "sent": "The snow is white.",
+   "cn_sent": "雪是白色的。",
+   "word_audio": "audio/w_176.mp3",
+   "sent_audio": "audio/s_176.mp3"
+  },
+  {
+   "id": 177,
+   "en": "dumpling",
+   "cn": "饺子",
+   "sent": "I like dumplings.",
+   "cn_sent": "我喜欢饺子。",
+   "word_audio": "audio/w_177.mp3",
+   "sent_audio": "audio/s_177.mp3"
+  },
+  {
+   "id": 178,
+   "en": "scarf",
+   "cn": "围巾",
+   "sent": "The scarf is warm.",
+   "cn_sent": "围巾很暖和。",
+   "word_audio": "audio/w_178.mp3",
+   "sent_audio": "audio/s_178.mp3"
+  },
+  {
+   "id": 179,
+   "en": "yes",
+   "cn": "是的",
+   "sent": "Yes, I do.",
+   "cn_sent": "是的，我…。",
+   "word_audio": "audio/w_179.mp3",
+   "sent_audio": "audio/s_179.mp3"
+  },
+  {
+   "id": 180,
+   "en": "tired",
+   "cn": "疲倦的",
+   "sent": "I am tired.",
+   "cn_sent": "我累了。",
+   "word_audio": "audio/w_180.mp3",
+   "sent_audio": "audio/s_180.mp3"
+  },
+  {
+   "id": 181,
+   "en": "left",
+   "cn": "左边",
+   "sent": "Turn left.",
+   "cn_sent": "向左转。",
+   "word_audio": "audio/w_181.mp3",
+   "sent_audio": "audio/s_181.mp3"
+  },
+  {
+   "id": 182,
+   "en": "think",
+   "cn": "想/认为",
+   "sent": "I think it is good.",
+   "cn_sent": "我觉得它很好。",
+   "word_audio": "audio/w_182.mp3",
+   "sent_audio": "audio/s_182.mp3"
+  },
+  {
+   "id": 183,
+   "en": "elephant",
+   "cn": "大象",
+   "sent": "The elephant has a long nose.",
+   "cn_sent": "大象有长鼻子。",
+   "word_audio": "audio/w_183.mp3",
+   "sent_audio": "audio/s_183.mp3"
+  },
+  {
+   "id": 184,
+   "en": "TV",
+   "cn": "电视",
+   "sent": "We watch TV.",
+   "cn_sent": "我们看电视。",
+   "word_audio": "audio/w_184.mp3",
+   "sent_audio": "audio/s_184.mp3"
+  },
+  {
+   "id": 185,
+   "en": "today",
+   "cn": "今天",
+   "sent": "It is hot today.",
+   "cn_sent": "今天很热。",
+   "word_audio": "audio/w_185.mp3",
+   "sent_audio": "audio/s_185.mp3"
+  },
+  {
+   "id": 186,
+   "en": "watermelon",
+   "cn": "西瓜",
+   "sent": "The watermelon is big.",
+   "cn_sent": "西瓜很大。",
+   "word_audio": "audio/w_186.mp3",
+   "sent_audio": "audio/s_186.mp3"
+  },
+  {
+   "id": 187,
+   "en": "play",
+   "cn": "玩",
+   "sent": "I play with my dog.",
+   "cn_sent": "我和我的狗玩。",
+   "word_audio": "audio/w_187.mp3",
+   "sent_audio": "audio/s_187.mp3"
+  },
+  {
+   "id": 188,
+   "en": "short",
+   "cn": "短的/矮的",
+   "sent": "The pencil is short.",
+   "cn_sent": "这支铅笔很短。",
+   "word_audio": "audio/w_188.mp3",
+   "sent_audio": "audio/s_188.mp3"
+  },
+  {
+   "id": 189,
+   "en": "frog",
+   "cn": "青蛙",
+   "sent": "The frog can jump.",
+   "cn_sent": "青蛙会跳。",
+   "word_audio": "audio/w_189.mp3",
+   "sent_audio": "audio/s_189.mp3"
+  },
+  {
+   "id": 190,
+   "en": "we",
+   "cn": "我们",
+   "sent": "We are students.",
+   "cn_sent": "我们是学生。",
+   "word_audio": "audio/w_190.mp3",
+   "sent_audio": "audio/s_190.mp3"
+  },
+  {
+   "id": 191,
+   "en": "zoo",
+   "cn": "动物园",
+   "sent": "We go to the zoo.",
+   "cn_sent": "我们去动物园。",
+   "word_audio": "audio/w_191.mp3",
+   "sent_audio": "audio/s_191.mp3"
+  },
+  {
+   "id": 192,
+   "en": "noodles",
+   "cn": "面条",
+   "sent": "I eat noodles for dinner.",
+   "cn_sent": "我晚饭吃面条。",
+   "word_audio": "audio/w_192.mp3",
+   "sent_audio": "audio/s_192.mp3"
+  },
+  {
+   "id": 193,
+   "en": "thirty",
+   "cn": "三十",
+   "sent": "My father is thirty.",
+   "cn_sent": "我爸爸三十岁。",
+   "word_audio": "audio/w_193.mp3",
+   "sent_audio": "audio/s_193.mp3"
+  },
+  {
+   "id": 194,
+   "en": "hamburger",
+   "cn": "汉堡包",
+   "sent": "I want a hamburger.",
+   "cn_sent": "我想要一个汉堡包。",
+   "word_audio": "audio/w_194.mp3",
+   "sent_audio": "audio/s_194.mp3"
+  },
+  {
+   "id": 195,
+   "en": "learn",
+   "cn": "学习",
+   "sent": "We learn new words.",
+   "cn_sent": "我们学新单词。",
+   "word_audio": "audio/w_195.mp3",
+   "sent_audio": "audio/s_195.mp3"
+  },
+  {
+   "id": 196,
+   "en": "ice cream",
+   "cn": "冰淇淋",
+   "sent": "The ice cream is cold.",
+   "cn_sent": "冰淇淋很冰。",
+   "word_audio": "audio/w_196.mp3",
+   "sent_audio": "audio/s_196.mp3"
+  },
+  {
+   "id": 197,
+   "en": "clean",
+   "cn": "打扫",
+   "sent": "I clean my room.",
+   "cn_sent": "我打扫我的房间。",
+   "word_audio": "audio/w_197.mp3",
+   "sent_audio": "audio/s_197.mp3"
+  },
+  {
+   "id": 198,
+   "en": "sleep",
+   "cn": "睡觉",
+   "sent": "The baby sleeps.",
+   "cn_sent": "婴儿在睡觉。",
+   "word_audio": "audio/w_198.mp3",
+   "sent_audio": "audio/s_198.mp3"
+  },
+  {
+   "id": 199,
+   "en": "these",
+   "cn": "这些",
+   "sent": "These are apples.",
+   "cn_sent": "这些是苹果。",
+   "word_audio": "audio/w_199.mp3",
+   "sent_audio": "audio/s_199.mp3"
+  },
+  {
+   "id": 200,
+   "en": "computer",
+   "cn": "电脑",
+   "sent": "I play games on the computer.",
+   "cn_sent": "我在电脑上玩游戏。",
+   "word_audio": "audio/w_200.mp3",
+   "sent_audio": "audio/s_200.mp3"
+  },
+  {
+   "id": 201,
+   "en": "name",
+   "cn": "名字",
+   "sent": "My name is Lily.",
+   "cn_sent": "我的名字是莉莉。",
+   "word_audio": "audio/w_201.mp3",
+   "sent_audio": "audio/s_201.mp3"
+  },
+  {
+   "id": 202,
+   "en": "ruler",
+   "cn": "尺子",
+   "sent": "I have a long ruler.",
+   "cn_sent": "我有一把长尺子。",
+   "word_audio": "audio/w_202.mp3",
+   "sent_audio": "audio/s_202.mp3"
+  },
+  {
+   "id": 203,
+   "en": "age",
+   "cn": "年龄",
+   "sent": "What is your age?",
+   "cn_sent": "你多大了？",
+   "word_audio": "audio/w_203.mp3",
+   "sent_audio": "audio/s_203.mp3"
+  },
+  {
+   "id": 204,
+   "en": "dress",
+   "cn": "连衣裙",
+   "sent": "The dress is beautiful.",
+   "cn_sent": "这条连衣裙很漂亮。",
+   "word_audio": "audio/w_204.mp3",
+   "sent_audio": "audio/s_204.mp3"
+  },
+  {
+   "id": 205,
+   "en": "mouth",
+   "cn": "嘴",
+   "sent": "Open your mouth.",
+   "cn_sent": "张开你的嘴。",
+   "word_audio": "audio/w_205.mp3",
+   "sent_audio": "audio/s_205.mp3"
+  },
+  {
+   "id": 206,
+   "en": "baby",
+   "cn": "婴儿",
+   "sent": "The baby is sleeping.",
+   "cn_sent": "婴儿在睡觉。",
+   "word_audio": "audio/w_206.mp3",
+   "sent_audio": "audio/s_206.mp3"
+  },
+  {
+   "id": 207,
+   "en": "windy",
+   "cn": "刮风的",
+   "sent": "It is windy today.",
+   "cn_sent": "今天有风。",
+   "word_audio": "audio/w_207.mp3",
+   "sent_audio": "audio/s_207.mp3"
+  },
+  {
+   "id": 208,
+   "en": "purple",
+   "cn": "紫色",
+   "sent": "I like purple grapes.",
+   "cn_sent": "我喜欢紫色的葡萄。",
+   "word_audio": "audio/w_208.mp3",
+   "sent_audio": "audio/s_208.mp3"
+  },
+  {
+   "id": 209,
+   "en": "then",
+   "cn": "然后",
+   "sent": "First wash your hands, then eat.",
+   "cn_sent": "先洗手，再吃饭。",
+   "word_audio": "audio/w_209.mp3",
+   "sent_audio": "audio/s_209.mp3"
+  },
+  {
+   "id": 210,
+   "en": "answer",
+   "cn": "回答",
+   "sent": "Please answer the question.",
+   "cn_sent": "请回答问题。",
+   "word_audio": "audio/w_210.mp3",
+   "sent_audio": "audio/s_210.mp3"
+  },
+  {
+   "id": 211,
+   "en": "my",
+   "cn": "我的",
+   "sent": "This is my book.",
+   "cn_sent": "这是我的书。",
+   "word_audio": "audio/w_211.mp3",
+   "sent_audio": "audio/s_211.mp3"
+  },
+  {
+   "id": 212,
+   "en": "onion",
+   "cn": "洋葱",
+   "sent": "Cut the onion.",
+   "cn_sent": "切洋葱。",
+   "word_audio": "audio/w_212.mp3",
+   "sent_audio": "audio/s_212.mp3"
+  },
+  {
+   "id": 213,
+   "en": "scissors",
+   "cn": "剪刀",
+   "sent": "The scissors are sharp.",
+   "cn_sent": "剪刀很锋利。",
+   "word_audio": "audio/w_213.mp3",
+   "sent_audio": "audio/s_213.mp3"
+  },
+  {
+   "id": 214,
+   "en": "window",
+   "cn": "窗户",
+   "sent": "Open the window.",
+   "cn_sent": "打开窗户。",
+   "word_audio": "audio/w_214.mp3",
+   "sent_audio": "audio/s_214.mp3"
+  },
+  {
+   "id": 215,
+   "en": "shelf",
+   "cn": "架子",
+   "sent": "The books are on the shelf.",
+   "cn_sent": "书在架子上。",
+   "word_audio": "audio/w_215.mp3",
+   "sent_audio": "audio/s_215.mp3"
+  },
+  {
+   "id": 216,
+   "en": "gift",
+   "cn": "礼物",
+   "sent": "I get a gift.",
+   "cn_sent": "我收到一个礼物。",
+   "word_audio": "audio/w_216.mp3",
+   "sent_audio": "audio/s_216.mp3"
+  },
+  {
+   "id": 217,
+   "en": "she",
+   "cn": "她",
+   "sent": "She is my sister.",
+   "cn_sent": "她是我的姐姐。",
+   "word_audio": "audio/w_217.mp3",
+   "sent_audio": "audio/s_217.mp3"
+  },
+  {
+   "id": 218,
+   "en": "weather",
+   "cn": "天气",
+   "sent": "How is the weather?",
+   "cn_sent": "天气怎么样？",
+   "word_audio": "audio/w_218.mp3",
+   "sent_audio": "audio/s_218.mp3"
+  },
+  {
+   "id": 219,
+   "en": "woman",
+   "cn": "女人",
+   "sent": "The woman is beautiful.",
+   "cn_sent": "这个女人很漂亮。",
+   "word_audio": "audio/w_219.mp3",
+   "sent_audio": "audio/s_219.mp3"
+  },
+  {
+   "id": 220,
+   "en": "rainy",
+   "cn": "下雨的",
+   "sent": "It is rainy today.",
+   "cn_sent": "今天下雨。",
+   "word_audio": "audio/w_220.mp3",
+   "sent_audio": "audio/s_220.mp3"
+  },
+  {
+   "id": 221,
+   "en": "twelve",
+   "cn": "十二",
+   "sent": "There are twelve months in a year.",
+   "cn_sent": "一年有十二个月。",
+   "word_audio": "audio/w_221.mp3",
+   "sent_audio": "audio/s_221.mp3"
+  },
+  {
+   "id": 222,
+   "en": "storybook",
+   "cn": "故事书",
+   "sent": "I like storybooks.",
+   "cn_sent": "我喜欢故事书。",
+   "word_audio": "audio/w_222.mp3",
+   "sent_audio": "audio/s_222.mp3"
+  },
+  {
+   "id": 223,
+   "en": "blackboard",
+   "cn": "黑板",
+   "sent": "Look at the blackboard.",
+   "cn_sent": "看黑板。",
+   "word_audio": "audio/w_223.mp3",
+   "sent_audio": "audio/s_223.mp3"
+  },
+  {
+   "id": 224,
+   "en": "can",
+   "cn": "能/会",
+   "sent": "I can swim.",
+   "cn_sent": "我会游泳。",
+   "word_audio": "audio/w_224.mp3",
+   "sent_audio": "audio/s_224.mp3"
+  },
+  {
+   "id": 225,
+   "en": "nine",
+   "cn": "九",
+   "sent": "I am nine years old.",
+   "cn_sent": "我九岁了。",
+   "word_audio": "audio/w_225.mp3",
+   "sent_audio": "audio/s_225.mp3"
+  },
+  {
+   "id": 226,
+   "en": "big",
+   "cn": "大的",
+   "sent": "The elephant is big.",
+   "cn_sent": "大象很大。",
+   "word_audio": "audio/w_226.mp3",
+   "sent_audio": "audio/s_226.mp3"
+  },
+  {
+   "id": 227,
+   "en": "friend",
+   "cn": "朋友",
+   "sent": "She is my friend.",
+   "cn_sent": "她是我的朋友。",
+   "word_audio": "audio/w_227.mp3",
+   "sent_audio": "audio/s_227.mp3"
+  },
+  {
+   "id": 228,
+   "en": "thank",
+   "cn": "感谢",
+   "sent": "Thank you very much.",
+   "cn_sent": "非常感谢。",
+   "word_audio": "audio/w_228.mp3",
+   "sent_audio": "audio/s_228.mp3"
+  },
+  {
+   "id": 229,
+   "en": "home",
+   "cn": "家",
+   "sent": "I go home at five.",
+   "cn_sent": "我五点回家。",
+   "word_audio": "audio/w_229.mp3",
+   "sent_audio": "audio/s_229.mp3"
+  },
+  {
+   "id": 230,
+   "en": "desk",
+   "cn": "书桌",
+   "sent": "My desk is new.",
+   "cn_sent": "我的书桌是新的。",
+   "word_audio": "audio/w_230.mp3",
+   "sent_audio": "audio/s_230.mp3"
+  },
+  {
+   "id": 231,
+   "en": "them",
+   "cn": "他们(宾格)",
+   "sent": "I see them.",
+   "cn_sent": "我看到他们。",
+   "word_audio": "audio/w_231.mp3",
+   "sent_audio": "audio/s_231.mp3"
+  },
+  {
+   "id": 232,
+   "en": "bus",
+   "cn": "公交车",
+   "sent": "I go to school by bus.",
+   "cn_sent": "我坐公交车上学。",
+   "word_audio": "audio/w_232.mp3",
+   "sent_audio": "audio/s_232.mp3"
+  },
+  {
+   "id": 233,
+   "en": "empty",
+   "cn": "空的",
+   "sent": "The bottle is empty.",
+   "cn_sent": "瓶子空了。",
+   "word_audio": "audio/w_233.mp3",
+   "sent_audio": "audio/s_233.mp3"
+  },
+  {
+   "id": 234,
+   "en": "goat",
+   "cn": "山羊",
+   "sent": "The goat likes grass.",
+   "cn_sent": "山羊喜欢草。",
+   "word_audio": "audio/w_234.mp3",
+   "sent_audio": "audio/s_234.mp3"
+  },
+  {
+   "id": 235,
+   "en": "plane",
+   "cn": "飞机",
+   "sent": "The plane can fly.",
+   "cn_sent": "飞机会飞。",
+   "word_audio": "audio/w_235.mp3",
+   "sent_audio": "audio/s_235.mp3"
+  },
+  {
+   "id": 236,
+   "en": "candy",
+   "cn": "糖果",
+   "sent": "Don't eat too much candy.",
+   "cn_sent": "不要吃太多糖果。",
+   "word_audio": "audio/w_236.mp3",
+   "sent_audio": "audio/s_236.mp3"
+  },
+  {
+   "id": 237,
+   "en": "right",
+   "cn": "正确的",
+   "sent": "Turn right.",
+   "cn_sent": "向右转。",
+   "word_audio": "audio/w_237.mp3",
+   "sent_audio": "audio/s_237.mp3"
+  },
+  {
+   "id": 238,
+   "en": "friendly",
+   "cn": "友好的",
+   "sent": "She is friendly.",
+   "cn_sent": "她很友好。",
+   "word_audio": "audio/w_238.mp3",
+   "sent_audio": "audio/s_238.mp3"
+  },
+  {
+   "id": 239,
+   "en": "writer",
+   "cn": "作家",
+   "sent": "He is a writer.",
+   "cn_sent": "他是一名作家。",
+   "word_audio": "audio/w_239.mp3",
+   "sent_audio": "audio/s_239.mp3"
+  },
+  {
+   "id": 240,
+   "en": "because",
+   "cn": "因为",
+   "sent": "I like it because it is cute.",
+   "cn_sent": "我喜欢它因为它很可爱。",
+   "word_audio": "audio/w_240.mp3",
+   "sent_audio": "audio/s_240.mp3"
+  },
+  {
+   "id": 241,
+   "en": "close",
+   "cn": "关闭",
+   "sent": "Close your eyes.",
+   "cn_sent": "闭上眼睛。",
+   "word_audio": "audio/w_241.mp3",
+   "sent_audio": "audio/s_241.mp3"
+  },
+  {
+   "id": 242,
+   "en": "socks",
+   "cn": "袜子",
+   "sent": "I wear white socks.",
+   "cn_sent": "我穿白袜子。",
+   "word_audio": "audio/w_242.mp3",
+   "sent_audio": "audio/s_242.mp3"
+  },
+  {
+   "id": 243,
+   "en": "when",
+   "cn": "什么时候",
+   "sent": "When do you get up?",
+   "cn_sent": "你什么时候起床？",
+   "word_audio": "audio/w_243.mp3",
+   "sent_audio": "audio/s_243.mp3"
+  },
+  {
+   "id": 244,
+   "en": "driver",
+   "cn": "司机",
+   "sent": "The driver drives a bus.",
+   "cn_sent": "司机开公交车。",
+   "word_audio": "audio/w_244.mp3",
+   "sent_audio": "audio/s_244.mp3"
+  },
+  {
+   "id": 245,
+   "en": "strawberry",
+   "cn": "草莓",
+   "sent": "I like strawberries.",
+   "cn_sent": "我喜欢草莓。",
+   "word_audio": "audio/w_245.mp3",
+   "sent_audio": "audio/s_245.mp3"
+  },
+  {
+   "id": 246,
+   "en": "but",
+   "cn": "但是",
+   "sent": "I like it, but it is expensive.",
+   "cn_sent": "我喜欢它，但它很贵。",
+   "word_audio": "audio/w_246.mp3",
+   "sent_audio": "audio/s_246.mp3"
+  },
+  {
+   "id": 247,
+   "en": "brother",
+   "cn": "兄弟",
+   "sent": "My brother is tall.",
+   "cn_sent": "我哥哥很高。",
+   "word_audio": "audio/w_247.mp3",
+   "sent_audio": "audio/s_247.mp3"
+  },
+  {
+   "id": 248,
+   "en": "orange",
+   "cn": "橙色",
+   "sent": "I eat an orange.",
+   "cn_sent": "我吃一个橙子。",
+   "word_audio": "audio/w_248.mp3",
+   "sent_audio": "audio/s_248.mp3"
+  },
+  {
+   "id": 249,
+   "en": "wet",
+   "cn": "湿的",
+   "sent": "My shoes are wet.",
+   "cn_sent": "我的鞋子湿了。",
+   "word_audio": "audio/w_249.mp3",
+   "sent_audio": "audio/s_249.mp3"
+  },
+  {
+   "id": 250,
+   "en": "thin",
+   "cn": "瘦的",
+   "sent": "The boy is thin.",
+   "cn_sent": "这个男孩很瘦。",
+   "word_audio": "audio/w_250.mp3",
+   "sent_audio": "audio/s_250.mp3"
+  },
+  {
+   "id": 251,
+   "en": "pear",
+   "cn": "梨",
+   "sent": "The pear is sweet.",
+   "cn_sent": "梨很甜。",
+   "word_audio": "audio/w_251.mp3",
+   "sent_audio": "audio/s_251.mp3"
+  },
+  {
+   "id": 252,
+   "en": "panda",
+   "cn": "熊猫",
+   "sent": "The panda is black and white.",
+   "cn_sent": "熊猫是黑白色的。",
+   "word_audio": "audio/w_252.mp3",
+   "sent_audio": "audio/s_252.mp3"
+  },
+  {
+   "id": 253,
+   "en": "here",
+   "cn": "这里",
+   "sent": "Come here.",
+   "cn_sent": "来这里。",
+   "word_audio": "audio/w_253.mp3",
+   "sent_audio": "audio/s_253.mp3"
+  },
+  {
+   "id": 254,
+   "en": "cow",
+   "cn": "奶牛",
+   "sent": "The cow gives milk.",
+   "cn_sent": "奶牛产奶。",
+   "word_audio": "audio/w_254.mp3",
+   "sent_audio": "audio/s_254.mp3"
+  },
+  {
+   "id": 255,
+   "en": "morning",
+   "cn": "早晨",
+   "sent": "Good morning.",
+   "cn_sent": "早上好。",
+   "word_audio": "audio/w_255.mp3",
+   "sent_audio": "audio/s_255.mp3"
+  },
+  {
+   "id": 256,
+   "en": "science",
+   "cn": "科学",
+   "sent": "We have science today.",
+   "cn_sent": "我们今天有科学课。",
+   "word_audio": "audio/w_256.mp3",
+   "sent_audio": "audio/s_256.mp3"
+  },
+  {
+   "id": 257,
+   "en": "fourteen",
+   "cn": "十四",
+   "sent": "There are fourteen desks.",
+   "cn_sent": "有十四张书桌。",
+   "word_audio": "audio/w_257.mp3",
+   "sent_audio": "audio/s_257.mp3"
+  },
+  {
+   "id": 258,
+   "en": "bell",
+   "cn": "铃",
+   "sent": "The bell rings.",
+   "cn_sent": "铃响了。",
+   "word_audio": "audio/w_258.mp3",
+   "sent_audio": "audio/s_258.mp3"
+  },
+  {
+   "id": 259,
+   "en": "library",
+   "cn": "图书馆",
+   "sent": "I read in the library.",
+   "cn_sent": "我在图书馆读书。",
+   "word_audio": "audio/w_259.mp3",
+   "sent_audio": "audio/s_259.mp3"
+  },
+  {
+   "id": 260,
+   "en": "green",
+   "cn": "绿色",
+   "sent": "The grass is green.",
+   "cn_sent": "草是绿色的。",
+   "word_audio": "audio/w_260.mp3",
+   "sent_audio": "audio/s_260.mp3"
+  },
+  {
+   "id": 261,
+   "en": "pencil",
+   "cn": "铅笔",
+   "sent": "I write with a pencil.",
+   "cn_sent": "我用铅笔写字。",
+   "word_audio": "audio/w_261.mp3",
+   "sent_audio": "audio/s_261.mp3"
+  },
+  {
+   "id": 262,
+   "en": "have",
+   "cn": "有",
+   "sent": "I have a new bag.",
+   "cn_sent": "我有一个新书包。",
+   "word_audio": "audio/w_262.mp3",
+   "sent_audio": "audio/s_262.mp3"
+  },
+  {
+   "id": 263,
+   "en": "nose",
+   "cn": "鼻子",
+   "sent": "My nose is small.",
+   "cn_sent": "我的鼻子很小。",
+   "word_audio": "audio/w_263.mp3",
+   "sent_audio": "audio/s_263.mp3"
+  },
+  {
+   "id": 264,
+   "en": "doll",
+   "cn": "玩偶",
+   "sent": "The doll is beautiful.",
+   "cn_sent": "娃娃很漂亮。",
+   "word_audio": "audio/w_264.mp3",
+   "sent_audio": "audio/s_264.mp3"
+  },
+  {
+   "id": 265,
+   "en": "no",
+   "cn": "不",
+   "sent": "No, it isn't.",
+   "cn_sent": "不，它不是。",
+   "word_audio": "audio/w_265.mp3",
+   "sent_audio": "audio/s_265.mp3"
+  },
+  {
+   "id": 266,
+   "en": "vegetable",
+   "cn": "蔬菜",
+   "sent": "Eat more vegetables.",
+   "cn_sent": "多吃蔬菜。",
+   "word_audio": "audio/w_266.mp3",
+   "sent_audio": "audio/s_266.mp3"
+  },
+  {
+   "id": 267,
+   "en": "am",
+   "cn": "是(I)",
+   "sent": "I am happy.",
+   "cn_sent": "我很开心。",
+   "word_audio": "audio/w_267.mp3",
+   "sent_audio": "audio/s_267.mp3"
+  },
+  {
+   "id": 268,
+   "en": "sad",
+   "cn": "悲伤的",
+   "sent": "The boy is sad.",
+   "cn_sent": "这个男孩很难过。",
+   "word_audio": "audio/w_268.mp3",
+   "sent_audio": "audio/s_268.mp3"
+  },
+  {
+   "id": 269,
+   "en": "T-shirt",
+   "cn": "T恤",
+   "sent": "I like this T-shirt.",
+   "cn_sent": "我喜欢这件T恤。",
+   "word_audio": "audio/w_269.mp3",
+   "sent_audio": "audio/s_269.mp3"
+  },
+  {
+   "id": 270,
+   "en": "stand",
+   "cn": "站",
+   "sent": "Stand up, please.",
+   "cn_sent": "请起立。",
+   "word_audio": "audio/w_270.mp3",
+   "sent_audio": "audio/s_270.mp3"
+  },
+  {
+   "id": 271,
+   "en": "ball",
+   "cn": "球",
+   "sent": "Throw the ball.",
+   "cn_sent": "扔球。",
+   "word_audio": "audio/w_271.mp3",
+   "sent_audio": "audio/s_271.mp3"
+  },
+  {
+   "id": 272,
+   "en": "car",
+   "cn": "小汽车",
+   "sent": "My father has a car.",
+   "cn_sent": "我爸爸有一辆车。",
+   "word_audio": "audio/w_272.mp3",
+   "sent_audio": "audio/s_272.mp3"
+  },
+  {
+   "id": 273,
+   "en": "that",
+   "cn": "那个",
+   "sent": "That is a cat.",
+   "cn_sent": "那是一只猫。",
+   "word_audio": "audio/w_273.mp3",
+   "sent_audio": "audio/s_273.mp3"
+  },
+  {
+   "id": 274,
+   "en": "mouse",
+   "cn": "老鼠",
+   "sent": "The mouse is small.",
+   "cn_sent": "老鼠很小。",
+   "word_audio": "audio/w_274.mp3",
+   "sent_audio": "audio/s_274.mp3"
+  },
+  {
+   "id": 275,
+   "en": "jeans",
+   "cn": "牛仔裤",
+   "sent": "I like blue jeans.",
+   "cn_sent": "我喜欢蓝色牛仔裤。",
+   "word_audio": "audio/w_275.mp3",
+   "sent_audio": "audio/s_275.mp3"
+  },
+  {
+   "id": 276,
+   "en": "notebook",
+   "cn": "笔记本",
+   "sent": "This is my notebook.",
+   "cn_sent": "这是我的笔记本。",
+   "word_audio": "audio/w_276.mp3",
+   "sent_audio": "audio/s_276.mp3"
+  },
+  {
+   "id": 277,
+   "en": "dry",
+   "cn": "干的",
+   "sent": "The clothes are dry.",
+   "cn_sent": "衣服干了。",
+   "word_audio": "audio/w_277.mp3",
+   "sent_audio": "audio/s_277.mp3"
+  },
+  {
+   "id": 278,
+   "en": "Friday",
+   "cn": "星期五",
+   "sent": "We have English on Friday.",
+   "cn_sent": "我们星期五有英语课。",
+   "word_audio": "audio/w_278.mp3",
+   "sent_audio": "audio/s_278.mp3"
+  },
+  {
+   "id": 279,
+   "en": "shoulder",
+   "cn": "肩膀",
+   "sent": "Touch your shoulders.",
+   "cn_sent": "摸摸你的肩膀。",
+   "word_audio": "audio/w_279.mp3",
+   "sent_audio": "audio/s_279.mp3"
+  },
+  {
+   "id": 280,
+   "en": "o'clock",
+   "cn": "…点钟",
+   "sent": "It is three o'clock.",
+   "cn_sent": "现在三点钟。",
+   "word_audio": "audio/w_280.mp3",
+   "sent_audio": "audio/s_280.mp3"
+  },
+  {
+   "id": 281,
+   "en": "you",
+   "cn": "你/你们",
+   "sent": "You are my friend.",
+   "cn_sent": "你是我的朋友。",
+   "word_audio": "audio/w_281.mp3",
+   "sent_audio": "audio/s_281.mp3"
+  },
+  {
+   "id": 282,
+   "en": "like",
+   "cn": "喜欢",
+   "sent": "I like bananas.",
+   "cn_sent": "我喜欢香蕉。",
+   "word_audio": "audio/w_282.mp3",
+   "sent_audio": "audio/s_282.mp3"
+  },
+  {
+   "id": 283,
+   "en": "dog",
+   "cn": "狗",
+   "sent": "I have a dog.",
+   "cn_sent": "我有一只狗。",
+   "word_audio": "audio/w_283.mp3",
+   "sent_audio": "audio/s_283.mp3"
+  },
+  {
+   "id": 284,
+   "en": "their",
+   "cn": "他们的",
+   "sent": "Their house is new.",
+   "cn_sent": "他们的房子是新的。",
+   "word_audio": "audio/w_284.mp3",
+   "sent_audio": "audio/s_284.mp3"
+  },
+  {
+   "id": 285,
+   "en": "and",
+   "cn": "和",
+   "sent": "I like apples and bananas.",
+   "cn_sent": "我喜欢苹果和香蕉。",
+   "word_audio": "audio/w_285.mp3",
+   "sent_audio": "audio/s_285.mp3"
+  },
+  {
+   "id": 286,
+   "en": "three",
+   "cn": "三",
+   "sent": "I have three books.",
+   "cn_sent": "我有三本书。",
+   "word_audio": "audio/w_286.mp3",
+   "sent_audio": "audio/s_286.mp3"
+  },
+  {
+   "id": 287,
+   "en": "fish",
+   "cn": "鱼",
+   "sent": "Fish can swim.",
+   "cn_sent": "鱼会游泳。",
+   "word_audio": "audio/w_287.mp3",
+   "sent_audio": "audio/s_287.mp3"
+  },
+  {
+   "id": 288,
+   "en": "tennis",
+   "cn": "网球",
+   "sent": "I play tennis.",
+   "cn_sent": "我打网球。",
+   "word_audio": "audio/w_288.mp3",
+   "sent_audio": "audio/s_288.mp3"
+  },
+  {
+   "id": 289,
+   "en": "young",
+   "cn": "年轻的",
+   "sent": "My teacher is young.",
+   "cn_sent": "我的老师很年轻。",
+   "word_audio": "audio/w_289.mp3",
+   "sent_audio": "audio/s_289.mp3"
+  },
+  {
+   "id": 290,
+   "en": "listen",
+   "cn": "听",
+   "sent": "Listen to the teacher.",
+   "cn_sent": "听老师讲。",
+   "word_audio": "audio/w_290.mp3",
+   "sent_audio": "audio/s_290.mp3"
+  },
+  {
+   "id": 291,
+   "en": "fifty",
+   "cn": "五十",
+   "sent": "The book is fifty yuan.",
+   "cn_sent": "这本书五十元。",
+   "word_audio": "audio/w_291.mp3",
+   "sent_audio": "audio/s_291.mp3"
+  },
+  {
+   "id": 292,
+   "en": "foot",
+   "cn": "脚",
+   "sent": "My foot hurts.",
+   "cn_sent": "我的脚疼。",
+   "word_audio": "audio/w_292.mp3",
+   "sent_audio": "audio/s_292.mp3"
+  },
+  {
+   "id": 293,
+   "en": "mother",
+   "cn": "妈妈",
+   "sent": "My mother is kind.",
+   "cn_sent": "我妈妈很善良。",
+   "word_audio": "audio/w_293.mp3",
+   "sent_audio": "audio/s_293.mp3"
+  },
+  {
+   "id": 294,
+   "en": "chopsticks",
+   "cn": "筷子",
+   "sent": "I can use chopsticks.",
+   "cn_sent": "我会用筷子。",
+   "word_audio": "audio/w_294.mp3",
+   "sent_audio": "audio/s_294.mp3"
+  },
+  {
+   "id": 295,
+   "en": "book",
+   "cn": "书",
+   "sent": "I read a book.",
+   "cn_sent": "我读一本书。",
+   "word_audio": "audio/w_295.mp3",
+   "sent_audio": "audio/s_295.mp3"
+  },
+  {
+   "id": 296,
+   "en": "delicious",
+   "cn": "美味的",
+   "sent": "The cake is delicious.",
+   "cn_sent": "蛋糕很好吃。",
+   "word_audio": "audio/w_296.mp3",
+   "sent_audio": "audio/s_296.mp3"
+  },
+  {
+   "id": 297,
+   "en": "put",
+   "cn": "放",
+   "sent": "Put on your coat.",
+   "cn_sent": "穿上你的外套。",
+   "word_audio": "audio/w_297.mp3",
+   "sent_audio": "audio/s_297.mp3"
+  },
+  {
+   "id": 298,
+   "en": "one",
+   "cn": "一",
+   "sent": "I have one apple.",
+   "cn_sent": "我有一个苹果。",
+   "word_audio": "audio/w_298.mp3",
+   "sent_audio": "audio/s_298.mp3"
+  },
+  {
+   "id": 299,
+   "en": "glue",
+   "cn": "胶水",
+   "sent": "I need some glue.",
+   "cn_sent": "我需要一些胶水。",
+   "word_audio": "audio/w_299.mp3",
+   "sent_audio": "audio/s_299.mp3"
+  },
+  {
+   "id": 300,
+   "en": "eight",
+   "cn": "八",
+   "sent": "I have eight pens.",
+   "cn_sent": "我有八支钢笔。",
+   "word_audio": "audio/w_300.mp3",
+   "sent_audio": "audio/s_300.mp3"
+  },
+  {
+   "id": 301,
+   "en": "often",
+   "cn": "经常",
+   "sent": "I often read books.",
+   "cn_sent": "我经常读书。",
+   "word_audio": "audio/w_301.mp3",
+   "sent_audio": "audio/s_301.mp3"
+  },
+  {
+   "id": 302,
+   "en": "monkey",
+   "cn": "猴子",
+   "sent": "The monkey likes bananas.",
+   "cn_sent": "猴子喜欢香蕉。",
+   "word_audio": "audio/w_302.mp3",
+   "sent_audio": "audio/s_302.mp3"
+  },
+  {
+   "id": 303,
+   "en": "cap",
+   "cn": "鸭舌帽",
+   "sent": "He wears a cap.",
+   "cn_sent": "他戴着一顶帽子。",
+   "word_audio": "audio/w_303.mp3",
+   "sent_audio": "audio/s_303.mp3"
+  },
+  {
+   "id": 304,
+   "en": "soup",
+   "cn": "汤",
+   "sent": "The soup is hot.",
+   "cn_sent": "汤很热。",
+   "word_audio": "audio/w_304.mp3",
+   "sent_audio": "audio/s_304.mp3"
+  },
+  {
+   "id": 305,
+   "en": "paper",
+   "cn": "纸",
+   "sent": "I draw on paper.",
+   "cn_sent": "我在纸上画画。",
+   "word_audio": "audio/w_305.mp3",
+   "sent_audio": "audio/s_305.mp3"
+  },
+  {
+   "id": 306,
+   "en": "phone",
+   "cn": "电话",
+   "sent": "The phone is on the table.",
+   "cn_sent": "电话在桌子上。",
+   "word_audio": "audio/w_306.mp3",
+   "sent_audio": "audio/s_306.mp3"
+  },
+  {
+   "id": 307,
+   "en": "this",
+   "cn": "这个",
+   "sent": "This is a desk.",
+   "cn_sent": "这是一张书桌。",
+   "word_audio": "audio/w_307.mp3",
+   "sent_audio": "audio/s_307.mp3"
+  },
+  {
+   "id": 308,
+   "en": "boy",
+   "cn": "男孩",
+   "sent": "The boy is my friend.",
+   "cn_sent": "这个男孩是我的朋友。",
+   "word_audio": "audio/w_308.mp3",
+   "sent_audio": "audio/s_308.mp3"
+  },
+  {
+   "id": 309,
+   "en": "pink",
+   "cn": "粉色",
+   "sent": "My dress is pink.",
+   "cn_sent": "我的连衣裙是粉色的。",
+   "word_audio": "audio/w_309.mp3",
+   "sent_audio": "audio/s_309.mp3"
+  },
+  {
+   "id": 310,
+   "en": "beautiful",
+   "cn": "美丽的",
+   "sent": "The flower is beautiful.",
+   "cn_sent": "花很美丽。",
+   "word_audio": "audio/w_310.mp3",
+   "sent_audio": "audio/s_310.mp3"
+  },
+  {
+   "id": 311,
+   "en": "us",
+   "cn": "我们(宾格)",
+   "sent": "Let us play.",
+   "cn_sent": "让我们玩吧。",
+   "word_audio": "audio/w_311.mp3",
+   "sent_audio": "audio/s_311.mp3"
+  },
+  {
+   "id": 312,
+   "en": "milk",
+   "cn": "牛奶",
+   "sent": "I drink milk every day.",
+   "cn_sent": "我每天喝牛奶。",
+   "word_audio": "audio/w_312.mp3",
+   "sent_audio": "audio/s_312.mp3"
+  },
+  {
+   "id": 313,
+   "en": "snow",
+   "cn": "雪",
+   "sent": "The snow is white.",
+   "cn_sent": "雪是白色的。",
+   "word_audio": "audio/w_313.mp3",
+   "sent_audio": "audio/s_313.mp3"
+  },
+  {
+   "id": 314,
+   "en": "his",
+   "cn": "他的",
+   "sent": "His name is Tom.",
+   "cn_sent": "他的名字是汤姆。",
+   "word_audio": "audio/w_314.mp3",
+   "sent_audio": "audio/s_314.mp3"
+  },
+  {
+   "id": 315,
+   "en": "autumn",
+   "cn": "秋天",
+   "sent": "Leaves fall in autumn.",
+   "cn_sent": "秋天树叶落下。",
+   "word_audio": "audio/w_315.mp3",
+   "sent_audio": "audio/s_315.mp3"
+  },
+  {
+   "id": 316,
+   "en": "foggy",
+   "cn": "有雾的",
+   "sent": "It is foggy in the morning.",
+   "cn_sent": "早上有雾。",
+   "word_audio": "audio/w_316.mp3",
+   "sent_audio": "audio/s_316.mp3"
+  },
+  {
+   "id": 317,
+   "en": "always",
+   "cn": "总是",
+   "sent": "I always get up early.",
+   "cn_sent": "我总是早起。",
+   "word_audio": "audio/w_317.mp3",
+   "sent_audio": "audio/s_317.mp3"
+  },
+  {
+   "id": 318,
+   "en": "good",
+   "cn": "好的",
+   "sent": "I am a good student.",
+   "cn_sent": "我是好学生。",
+   "word_audio": "audio/w_318.mp3",
+   "sent_audio": "audio/s_318.mp3"
+  },
+  {
+   "id": 319,
+   "en": "truck",
+   "cn": "卡车",
+   "sent": "The truck is big.",
+   "cn_sent": "卡车很大。",
+   "word_audio": "audio/w_319.mp3",
+   "sent_audio": "audio/s_319.mp3"
+  },
+  {
+   "id": 320,
+   "en": "worker",
+   "cn": "工人",
+   "sent": "The worker works hard.",
+   "cn_sent": "工人努力工作。",
+   "word_audio": "audio/w_320.mp3",
+   "sent_audio": "audio/s_320.mp3"
+  },
+  {
+   "id": 321,
+   "en": "eighteen",
+   "cn": "十八",
+   "sent": "I have eighteen books.",
+   "cn_sent": "我有十八本书。",
+   "word_audio": "audio/w_321.mp3",
+   "sent_audio": "audio/s_321.mp3"
+  },
+  {
+   "id": 322,
+   "en": "between",
+   "cn": "在…之间",
+   "sent": "The ball is between the chairs.",
+   "cn_sent": "球在两把椅子之间。",
+   "word_audio": "audio/w_322.mp3",
+   "sent_audio": "audio/s_322.mp3"
+  },
+  {
+   "id": 323,
+   "en": "snowy",
+   "cn": "下雪的",
+   "sent": "It is snowy in winter.",
+   "cn_sent": "冬天下雪。",
+   "word_audio": "audio/w_323.mp3",
+   "sent_audio": "audio/s_323.mp3"
+  },
+  {
+   "id": 324,
+   "en": "Monday",
+   "cn": "星期一",
+   "sent": "I go to school on Monday.",
+   "cn_sent": "我星期一去上学。",
+   "word_audio": "audio/w_324.mp3",
+   "sent_audio": "audio/s_324.mp3"
+  },
+  {
+   "id": 325,
+   "en": "spring",
+   "cn": "春天",
+   "sent": "Flowers bloom in spring.",
+   "cn_sent": "春天花开了。",
+   "word_audio": "audio/w_325.mp3",
+   "sent_audio": "audio/s_325.mp3"
+  },
+  {
+   "id": 326,
+   "en": "sea",
+   "cn": "海",
+   "sent": "The sea is blue.",
+   "cn_sent": "大海是蓝色的。",
+   "word_audio": "audio/w_326.mp3",
+   "sent_audio": "audio/s_326.mp3"
+  },
+  {
+   "id": 327,
+   "en": "week",
+   "cn": "星期",
+   "sent": "There are seven days in a week.",
+   "cn_sent": "一周有七天。",
+   "word_audio": "audio/w_327.mp3",
+   "sent_audio": "audio/s_327.mp3"
+  },
+  {
+   "id": 328,
+   "en": "aunt",
+   "cn": "阿姨/姑姑",
+   "sent": "My aunt is a nurse.",
+   "cn_sent": "我姑姑是护士。",
+   "word_audio": "audio/w_328.mp3",
+   "sent_audio": "audio/s_328.mp3"
+  },
+  {
+   "id": 329,
+   "en": "bowl",
+   "cn": "碗",
+   "sent": "There is a bowl on the table.",
+   "cn_sent": "桌上有一个碗。",
+   "word_audio": "audio/w_329.mp3",
+   "sent_audio": "audio/s_329.mp3"
+  },
+  {
+   "id": 330,
+   "en": "living room",
+   "cn": "客厅",
+   "sent": "We watch TV in the living room.",
+   "cn_sent": "我们在客厅看电视。",
+   "word_audio": "audio/w_330.mp3",
+   "sent_audio": "audio/s_330.mp3"
+  },
+  {
+   "id": 331,
+   "en": "year",
+   "cn": "年",
+   "sent": "Happy New Year.",
+   "cn_sent": "新年快乐。",
+   "word_audio": "audio/w_331.mp3",
+   "sent_audio": "audio/s_331.mp3"
+  },
+  {
+   "id": 332,
+   "en": "busy",
+   "cn": "忙碌的",
+   "sent": "My mother is busy.",
+   "cn_sent": "我妈妈很忙。",
+   "word_audio": "audio/w_332.mp3",
+   "sent_audio": "audio/s_332.mp3"
+  },
+  {
+   "id": 333,
+   "en": "behind",
+   "cn": "在…后面",
+   "sent": "The dog is behind the door.",
+   "cn_sent": "狗在门后面。",
+   "word_audio": "audio/w_333.mp3",
+   "sent_audio": "audio/s_333.mp3"
+  },
+  {
+   "id": 334,
+   "en": "wash",
+   "cn": "洗",
+   "sent": "I wash my hands.",
+   "cn_sent": "我洗手。",
+   "word_audio": "audio/w_334.mp3",
+   "sent_audio": "audio/s_334.mp3"
+  },
+  {
+   "id": 335,
+   "en": "happy",
+   "cn": "快乐的",
+   "sent": "I am happy today.",
+   "cn_sent": "我今天很开心。",
+   "word_audio": "audio/w_335.mp3",
+   "sent_audio": "audio/s_335.mp3"
+  },
+  {
+   "id": 336,
+   "en": "tiger",
+   "cn": "老虎",
+   "sent": "The tiger is strong.",
+   "cn_sent": "老虎很强壮。",
+   "word_audio": "audio/w_336.mp3",
+   "sent_audio": "audio/s_336.mp3"
+  },
+  {
+   "id": 337,
+   "en": "seventeen",
+   "cn": "十七",
+   "sent": "There are seventeen boys.",
+   "cn_sent": "有十七个男孩。",
+   "word_audio": "audio/w_337.mp3",
+   "sent_audio": "audio/s_337.mp3"
+  },
+  {
+   "id": 338,
+   "en": "five",
+   "cn": "五",
+   "sent": "I have five fingers.",
+   "cn_sent": "我有五根手指。",
+   "word_audio": "audio/w_338.mp3",
+   "sent_audio": "audio/s_338.mp3"
+  },
+  {
+   "id": 339,
+   "en": "girl",
+   "cn": "女孩",
+   "sent": "The girl can sing.",
+   "cn_sent": "这个女孩会唱歌。",
+   "word_audio": "audio/w_339.mp3",
+   "sent_audio": "audio/s_339.mp3"
+  },
+  {
+   "id": 340,
+   "en": "singer",
+   "cn": "歌手",
+   "sent": "She is a singer.",
+   "cn_sent": "她是一名歌手。",
+   "word_audio": "audio/w_340.mp3",
+   "sent_audio": "audio/s_340.mp3"
+  },
+  {
+   "id": 341,
+   "en": "fork",
+   "cn": "叉子",
+   "sent": "I eat with a fork.",
+   "cn_sent": "我用叉子吃。",
+   "word_audio": "audio/w_341.mp3",
+   "sent_audio": "audio/s_341.mp3"
+  },
+  {
+   "id": 342,
+   "en": "cloudy",
+   "cn": "多云的",
+   "sent": "It is cloudy today.",
+   "cn_sent": "今天多云。",
+   "word_audio": "audio/w_342.mp3",
+   "sent_audio": "audio/s_342.mp3"
+  },
+  {
+   "id": 343,
+   "en": "so",
+   "cn": "所以",
+   "sent": "It is cold, so I wear a coat.",
+   "cn_sent": "天很冷，所以我穿外套。",
+   "word_audio": "audio/w_343.mp3",
+   "sent_audio": "audio/s_343.mp3"
+  },
+  {
+   "id": 344,
+   "en": "they",
+   "cn": "他们",
+   "sent": "They are my friends.",
+   "cn_sent": "他们是我的朋友。",
+   "word_audio": "audio/w_344.mp3",
+   "sent_audio": "audio/s_344.mp3"
+  },
+  {
+   "id": 345,
+   "en": "Wednesday",
+   "cn": "星期三",
+   "sent": "It is Wednesday today.",
+   "cn_sent": "今天是星期三。",
+   "word_audio": "audio/w_345.mp3",
+   "sent_audio": "audio/s_345.mp3"
+  },
+  {
+   "id": 346,
+   "en": "English",
+   "cn": "英语",
+   "sent": "I learn English.",
+   "cn_sent": "我学英语。",
+   "word_audio": "audio/w_346.mp3",
+   "sent_audio": "audio/s_346.mp3"
+  },
+  {
+   "id": 347,
+   "en": "swimming",
+   "cn": "游泳",
+   "sent": "I like swimming.",
+   "cn_sent": "我喜欢游泳。",
+   "word_audio": "audio/w_347.mp3",
+   "sent_audio": "audio/s_347.mp3"
+  },
+  {
+   "id": 348,
+   "en": "train",
+   "cn": "火车",
+   "sent": "The train is fast.",
+   "cn_sent": "火车很快。",
+   "word_audio": "audio/w_348.mp3",
+   "sent_audio": "audio/s_348.mp3"
+  },
+  {
+   "id": 349,
+   "en": "cheap",
+   "cn": "便宜的",
+   "sent": "The toy is cheap.",
+   "cn_sent": "这个玩具很便宜。",
+   "word_audio": "audio/w_349.mp3",
+   "sent_audio": "audio/s_349.mp3"
+  },
+  {
+   "id": 350,
+   "en": "shoes",
+   "cn": "鞋子",
+   "sent": "My shoes are black.",
+   "cn_sent": "我的鞋子是黑色的。",
+   "word_audio": "audio/w_350.mp3",
+   "sent_audio": "audio/s_350.mp3"
+  },
+  {
+   "id": 351,
+   "en": "walk",
+   "cn": "走",
+   "sent": "I walk to school.",
+   "cn_sent": "我走路去上学。",
+   "word_audio": "audio/w_351.mp3",
+   "sent_audio": "audio/s_351.mp3"
+  },
+  {
+   "id": 352,
+   "en": "too",
+   "cn": "太/也",
+   "sent": "I like it too.",
+   "cn_sent": "我也喜欢它。",
+   "word_audio": "audio/w_352.mp3",
+   "sent_audio": "audio/s_352.mp3"
+  },
+  {
+   "id": 353,
+   "en": "draw",
+   "cn": "画",
+   "sent": "I draw a tree.",
+   "cn_sent": "我画一棵树。",
+   "word_audio": "audio/w_353.mp3",
+   "sent_audio": "audio/s_353.mp3"
+  },
+  {
+   "id": 354,
+   "en": "difficult",
+   "cn": "困难的",
+   "sent": "It is difficult.",
+   "cn_sent": "这很难。",
+   "word_audio": "audio/w_354.mp3",
+   "sent_audio": "audio/s_354.mp3"
+  },
+  {
+   "id": 355,
+   "en": "clever",
+   "cn": "聪明的",
+   "sent": "The monkey is clever.",
+   "cn_sent": "猴子很聪明。",
+   "word_audio": "audio/w_355.mp3",
+   "sent_audio": "audio/s_355.mp3"
+  },
+  {
+   "id": 356,
+   "en": "tree",
+   "cn": "树",
+   "sent": "The tree is tall.",
+   "cn_sent": "树很高。",
+   "word_audio": "audio/w_356.mp3",
+   "sent_audio": "audio/s_356.mp3"
+  },
+  {
+   "id": 357,
+   "en": "please",
+   "cn": "请",
+   "sent": "Sit down, please.",
+   "cn_sent": "请坐。",
+   "word_audio": "audio/w_357.mp3",
+   "sent_audio": "audio/s_357.mp3"
+  },
+  {
+   "id": 358,
+   "en": "body",
+   "cn": "身体",
+   "sent": "My body is strong.",
+   "cn_sent": "我的身体很强壮。",
+   "word_audio": "audio/w_358.mp3",
+   "sent_audio": "audio/s_358.mp3"
+  },
+  {
+   "id": 359,
+   "en": "grape",
+   "cn": "葡萄",
+   "sent": "The grapes are purple.",
+   "cn_sent": "葡萄是紫色的。",
+   "word_audio": "audio/w_359.mp3",
+   "sent_audio": "audio/s_359.mp3"
+  },
+  {
+   "id": 360,
+   "en": "night",
+   "cn": "夜晚",
+   "sent": "Good night.",
+   "cn_sent": "晚安。",
+   "word_audio": "audio/w_360.mp3",
+   "sent_audio": "audio/s_360.mp3"
+  },
+  {
+   "id": 361,
+   "en": "under",
+   "cn": "在…下面",
+   "sent": "The ball is under the desk.",
+   "cn_sent": "球在书桌下面。",
+   "word_audio": "audio/w_361.mp3",
+   "sent_audio": "audio/s_361.mp3"
+  },
+  {
+   "id": 362,
+   "en": "hill",
+   "cn": "小山",
+   "sent": "The hill is small.",
+   "cn_sent": "小山很小。",
+   "word_audio": "audio/w_362.mp3",
+   "sent_audio": "audio/s_362.mp3"
+  },
+  {
+   "id": 363,
+   "en": "sunny",
+   "cn": "晴朗的",
+   "sent": "It is sunny today.",
+   "cn_sent": "今天阳光明媚。",
+   "word_audio": "audio/w_363.mp3",
+   "sent_audio": "audio/s_363.mp3"
+  },
+  {
+   "id": 364,
+   "en": "song",
+   "cn": "歌曲",
+   "sent": "I sing a song.",
+   "cn_sent": "我唱一首歌。",
+   "word_audio": "audio/w_364.mp3",
+   "sent_audio": "audio/s_364.mp3"
+  },
+  {
+   "id": 365,
+   "en": "music",
+   "cn": "音乐",
+   "sent": "I like music.",
+   "cn_sent": "我喜欢音乐。",
+   "word_audio": "audio/w_365.mp3",
+   "sent_audio": "audio/s_365.mp3"
+  },
+  {
+   "id": 366,
+   "en": "expensive",
+   "cn": "昂贵的",
+   "sent": "The car is expensive.",
+   "cn_sent": "这辆车很贵。",
+   "word_audio": "audio/w_366.mp3",
+   "sent_audio": "audio/s_366.mp3"
+  },
+  {
+   "id": 367,
+   "en": "is",
+   "cn": "是(他/她/它)",
+   "sent": "She is my sister.",
+   "cn_sent": "她是我的姐姐。",
+   "word_audio": "audio/w_367.mp3",
+   "sent_audio": "audio/s_367.mp3"
+  },
+  {
+   "id": 368,
+   "en": "picnic",
+   "cn": "野餐",
+   "sent": "We have a picnic.",
+   "cn_sent": "我们去野餐。",
+   "word_audio": "audio/w_368.mp3",
+   "sent_audio": "audio/s_368.mp3"
+  },
+  {
+   "id": 369,
+   "en": "yellow",
+   "cn": "黄色",
+   "sent": "The banana is yellow.",
+   "cn_sent": "香蕉是黄色的。",
+   "word_audio": "audio/w_369.mp3",
+   "sent_audio": "audio/s_369.mp3"
+  },
+  {
+   "id": 370,
+   "en": "knee",
+   "cn": "膝盖",
+   "sent": "Bend your knees.",
+   "cn_sent": "弯弯你的膝盖。",
+   "word_audio": "audio/w_370.mp3",
+   "sent_audio": "audio/s_370.mp3"
+  },
+  {
+   "id": 371,
+   "en": "story",
+   "cn": "故事",
+   "sent": "I read a story.",
+   "cn_sent": "我读一个故事。",
+   "word_audio": "audio/w_371.mp3",
+   "sent_audio": "audio/s_371.mp3"
+  },
+  {
+   "id": 372,
+   "en": "see",
+   "cn": "看见",
+   "sent": "I see a bird.",
+   "cn_sent": "我看到一只鸟。",
+   "word_audio": "audio/w_372.mp3",
+   "sent_audio": "audio/s_372.mp3"
+  },
+  {
+   "id": 373,
+   "en": "football",
+   "cn": "足球",
+   "sent": "I play football.",
+   "cn_sent": "我踢足球。",
+   "word_audio": "audio/w_373.mp3",
+   "sent_audio": "audio/s_373.mp3"
+  },
+  {
+   "id": 374,
+   "en": "be",
+   "cn": "是",
+   "sent": "I want to be a teacher.",
+   "cn_sent": "我想成为一名老师。",
+   "word_audio": "audio/w_374.mp3",
+   "sent_audio": "audio/s_374.mp3"
+  },
+  {
+   "id": 375,
+   "en": "goodbye",
+   "cn": "再见",
+   "sent": "Goodbye, teacher.",
+   "cn_sent": "再见，老师。",
+   "word_audio": "audio/w_375.mp3",
+   "sent_audio": "audio/s_375.mp3"
+  },
+  {
+   "id": 376,
+   "en": "evening",
+   "cn": "傍晚",
+   "sent": "Good evening.",
+   "cn_sent": "晚上好。",
+   "word_audio": "audio/w_376.mp3",
+   "sent_audio": "audio/s_376.mp3"
+  },
+  {
+   "id": 377,
+   "en": "eat",
+   "cn": "吃",
+   "sent": "I eat an apple.",
+   "cn_sent": "我吃一个苹果。",
+   "word_audio": "audio/w_377.mp3",
+   "sent_audio": "audio/s_377.mp3"
+  },
+  {
+   "id": 378,
+   "en": "holiday",
+   "cn": "假日",
+   "sent": "Summer holiday is coming.",
+   "cn_sent": "暑假要来了。",
+   "word_audio": "audio/w_378.mp3",
+   "sent_audio": "audio/s_378.mp3"
+  },
+  {
+   "id": 379,
+   "en": "uncle",
+   "cn": "叔叔/舅舅",
+   "sent": "My uncle lives in Beijing.",
+   "cn_sent": "我叔叔住在北京。",
+   "word_audio": "audio/w_379.mp3",
+   "sent_audio": "audio/s_379.mp3"
+  },
+  {
+   "id": 380,
+   "en": "are",
+   "cn": "是(你/你们/我们/他们)",
+   "sent": "You are my friend.",
+   "cn_sent": "你是我的朋友。",
+   "word_audio": "audio/w_380.mp3",
+   "sent_audio": "audio/s_380.mp3"
+  },
+  {
+   "id": 381,
+   "en": "also",
+   "cn": "也",
+   "sent": "I also like milk.",
+   "cn_sent": "我也喜欢牛奶。",
+   "word_audio": "audio/w_381.mp3",
+   "sent_audio": "audio/s_381.mp3"
+  },
+  {
+   "id": 382,
+   "en": "or",
+   "cn": "或者",
+   "sent": "Do you want tea or juice?",
+   "cn_sent": "你想要茶还是果汁？",
+   "word_audio": "audio/w_382.mp3",
+   "sent_audio": "audio/s_382.mp3"
+  },
+  {
+   "id": 383,
+   "en": "photo",
+   "cn": "照片",
+   "sent": "Look at this photo.",
+   "cn_sent": "看这张照片。",
+   "word_audio": "audio/w_383.mp3",
+   "sent_audio": "audio/s_383.mp3"
+  },
+  {
+   "id": 384,
+   "en": "Saturday",
+   "cn": "星期六",
+   "sent": "I play with friends on Saturday.",
+   "cn_sent": "我星期六和朋友玩。",
+   "word_audio": "audio/w_384.mp3",
+   "sent_audio": "audio/s_384.mp3"
+  },
+  {
+   "id": 385,
+   "en": "warm",
+   "cn": "温暖的",
+   "sent": "It is warm in spring.",
+   "cn_sent": "春天很温暖。",
+   "word_audio": "audio/w_385.mp3",
+   "sent_audio": "audio/s_385.mp3"
+  },
+  {
+   "id": 386,
+   "en": "hand",
+   "cn": "手",
+   "sent": "Wash your hands.",
+   "cn_sent": "洗洗你的手。",
+   "word_audio": "audio/w_386.mp3",
+   "sent_audio": "audio/s_386.mp3"
+  },
+  {
+   "id": 387,
+   "en": "Tuesday",
+   "cn": "星期二",
+   "sent": "We have art on Tuesday.",
+   "cn_sent": "我们星期二有美术课。",
+   "word_audio": "audio/w_387.mp3",
+   "sent_audio": "audio/s_387.mp3"
+  },
+  {
+   "id": 388,
+   "en": "run",
+   "cn": "跑",
+   "sent": "I run fast.",
+   "cn_sent": "我跑得快。",
+   "word_audio": "audio/w_388.mp3",
+   "sent_audio": "audio/s_388.mp3"
+  },
+  {
+   "id": 389,
+   "en": "tell",
+   "cn": "告诉",
+   "sent": "Tell me a story.",
+   "cn_sent": "给我讲个故事。",
+   "word_audio": "audio/w_389.mp3",
+   "sent_audio": "audio/s_389.mp3"
+  },
+  {
+   "id": 390,
+   "en": "sweater",
+   "cn": "毛衣",
+   "sent": "This sweater is warm.",
+   "cn_sent": "这件毛衣很暖和。",
+   "word_audio": "audio/w_390.mp3",
+   "sent_audio": "audio/s_390.mp3"
+  },
+  {
+   "id": 391,
+   "en": "sharpener",
+   "cn": "卷笔刀",
+   "sent": "I use a sharpener.",
+   "cn_sent": "我用卷笔刀。",
+   "word_audio": "audio/w_391.mp3",
+   "sent_audio": "audio/s_391.mp3"
+  },
+  {
+   "id": 392,
+   "en": "cool",
+   "cn": "凉爽的",
+   "sent": "It is cool in autumn.",
+   "cn_sent": "秋天很凉爽。",
+   "word_audio": "audio/w_392.mp3",
+   "sent_audio": "audio/s_392.mp3"
+  },
+  {
+   "id": 393,
+   "en": "river",
+   "cn": "河流",
+   "sent": "The river is long.",
+   "cn_sent": "河流很长。",
+   "word_audio": "audio/w_393.mp3",
+   "sent_audio": "audio/s_393.mp3"
+  },
+  {
+   "id": 394,
+   "en": "kitchen",
+   "cn": "厨房",
+   "sent": "Mum is in the kitchen.",
+   "cn_sent": "妈妈在厨房。",
+   "word_audio": "audio/w_394.mp3",
+   "sent_audio": "audio/s_394.mp3"
+  },
+  {
+   "id": 395,
+   "en": "bed",
+   "cn": "床",
+   "sent": "I sleep on the bed.",
+   "cn_sent": "我睡在床上。",
+   "word_audio": "audio/w_395.mp3",
+   "sent_audio": "audio/s_395.mp3"
+  },
+  {
+   "id": 396,
+   "en": "safe",
+   "cn": "安全的",
+   "sent": "This place is safe.",
+   "cn_sent": "这个地方很安全。",
+   "word_audio": "audio/w_396.mp3",
+   "sent_audio": "audio/s_396.mp3"
+  },
+  {
+   "id": 397,
+   "en": "thirteen",
+   "cn": "十三",
+   "sent": "I have thirteen crayons.",
+   "cn_sent": "我有十三支蜡笔。",
+   "word_audio": "audio/w_397.mp3",
+   "sent_audio": "audio/s_397.mp3"
+  },
+  {
+   "id": 398,
+   "en": "ship",
+   "cn": "轮船",
+   "sent": "The ship is on the sea.",
+   "cn_sent": "船在海上。",
+   "word_audio": "audio/w_398.mp3",
+   "sent_audio": "audio/s_398.mp3"
+  },
+  {
+   "id": 399,
+   "en": "look",
+   "cn": "看",
+   "sent": "Look at the picture.",
+   "cn_sent": "看这幅画。",
+   "word_audio": "audio/w_399.mp3",
+   "sent_audio": "audio/s_399.mp3"
+  },
+  {
+   "id": 400,
+   "en": "wrong",
+   "cn": "错误的",
+   "sent": "It is wrong.",
+   "cn_sent": "这是错的。",
+   "word_audio": "audio/w_400.mp3",
+   "sent_audio": "audio/s_400.mp3"
+  },
+  {
+   "id": 401,
+   "en": "full",
+   "cn": "满的",
+   "sent": "The cup is full.",
+   "cn_sent": "杯子满了。",
+   "word_audio": "audio/w_401.mp3",
+   "sent_audio": "audio/s_401.mp3"
+  },
+  {
+   "id": 402,
+   "en": "small",
+   "cn": "小的",
+   "sent": "The mouse is small.",
+   "cn_sent": "老鼠很小。",
+   "word_audio": "audio/w_402.mp3",
+   "sent_audio": "audio/s_402.mp3"
+  },
+  {
+   "id": 403,
+   "en": "bear",
+   "cn": "熊",
+   "sent": "The bear is big.",
+   "cn_sent": "熊很大。",
+   "word_audio": "audio/w_403.mp3",
+   "sent_audio": "audio/s_403.mp3"
+  },
+  {
+   "id": 404,
+   "en": "flower",
+   "cn": "花",
+   "sent": "The flower is red.",
+   "cn_sent": "花是红色的。",
+   "word_audio": "audio/w_404.mp3",
+   "sent_audio": "audio/s_404.mp3"
+  },
+  {
+   "id": 405,
+   "en": "sometimes",
+   "cn": "有时",
+   "sent": "I sometimes play chess.",
+   "cn_sent": "我有时下棋。",
+   "word_audio": "audio/w_405.mp3",
+   "sent_audio": "audio/s_405.mp3"
+  },
+  {
+   "id": 406,
+   "en": "cook",
+   "cn": "厨师",
+   "sent": "Mum cooks dinner.",
+   "cn_sent": "妈妈做晚饭。",
+   "word_audio": "audio/w_406.mp3",
+   "sent_audio": "audio/s_406.mp3"
+  },
+  {
+   "id": 407,
+   "en": "open",
+   "cn": "打开",
+   "sent": "Open your book.",
+   "cn_sent": "打开你的书。",
+   "word_audio": "audio/w_407.mp3",
+   "sent_audio": "audio/s_407.mp3"
+  },
+  {
+   "id": 408,
+   "en": "swim",
+   "cn": "游泳",
+   "sent": "I swim in the sea.",
+   "cn_sent": "我在海里游泳。",
+   "word_audio": "audio/w_408.mp3",
+   "sent_audio": "audio/s_408.mp3"
+  },
+  {
+   "id": 409,
+   "en": "schoolbag",
+   "cn": "书包",
+   "sent": "My schoolbag is big.",
+   "cn_sent": "我的书包很大。",
+   "word_audio": "audio/w_409.mp3",
+   "sent_audio": "audio/s_409.mp3"
+  },
+  {
+   "id": 410,
+   "en": "chair",
+   "cn": "椅子",
+   "sent": "Sit on the chair.",
+   "cn_sent": "坐在椅子上。",
+   "word_audio": "audio/w_410.mp3",
+   "sent_audio": "audio/s_410.mp3"
+  },
+  {
+   "id": 411,
+   "en": "I",
+   "cn": "我",
+   "sent": "I am a girl.",
+   "cn_sent": "我是一个女孩。",
+   "word_audio": "audio/w_411.mp3",
+   "sent_audio": "audio/s_411.mp3"
+  },
+  {
+   "id": 412,
+   "en": "bag",
+   "cn": "书包",
+   "sent": "My bag is heavy.",
+   "cn_sent": "我的书包很重。",
+   "word_audio": "audio/w_412.mp3",
+   "sent_audio": "audio/s_412.mp3"
+  },
+  {
+   "id": 413,
+   "en": "quiet",
+   "cn": "安静的",
+   "sent": "Be quiet, please.",
+   "cn_sent": "请安静。",
+   "word_audio": "audio/w_413.mp3",
+   "sent_audio": "audio/s_413.mp3"
+  },
+  {
+   "id": 414,
+   "en": "maths",
+   "cn": "数学",
+   "sent": "I like maths.",
+   "cn_sent": "我喜欢数学。",
+   "word_audio": "audio/w_414.mp3",
+   "sent_audio": "audio/s_414.mp3"
+  },
+  {
+   "id": 415,
+   "en": "our",
+   "cn": "我们的",
+   "sent": "Our school is big.",
+   "cn_sent": "我们的学校很大。",
+   "word_audio": "audio/w_415.mp3",
+   "sent_audio": "audio/s_415.mp3"
+  },
+  {
+   "id": 416,
+   "en": "fridge",
+   "cn": "冰箱",
+   "sent": "The milk is in the fridge.",
+   "cn_sent": "牛奶在冰箱里。",
+   "word_audio": "audio/w_416.mp3",
+   "sent_audio": "audio/s_416.mp3"
+  },
+  {
+   "id": 417,
+   "en": "hello",
+   "cn": "你好",
+   "sent": "Hello, I am Amy.",
+   "cn_sent": "你好，我是艾米。",
+   "word_audio": "audio/w_417.mp3",
+   "sent_audio": "audio/s_417.mp3"
+  },
+  {
+   "id": 418,
+   "en": "room",
+   "cn": "房间",
+   "sent": "My room is clean.",
+   "cn_sent": "我的房间很干净。",
+   "word_audio": "audio/w_418.mp3",
+   "sent_audio": "audio/s_418.mp3"
+  },
+  {
+   "id": 419,
+   "en": "homework",
+   "cn": "家庭作业",
+   "sent": "I do my homework.",
+   "cn_sent": "我做作业。",
+   "word_audio": "audio/w_419.mp3",
+   "sent_audio": "audio/s_419.mp3"
+  },
+  {
+   "id": 420,
+   "en": "sister",
+   "cn": "姐妹",
+   "sent": "My sister is cute.",
+   "cn_sent": "我妹妹很可爱。",
+   "word_audio": "audio/w_420.mp3",
+   "sent_audio": "audio/s_420.mp3"
+  },
+  {
+   "id": 421,
+   "en": "coat",
+   "cn": "外套",
+   "sent": "Put on your coat.",
+   "cn_sent": "穿上你的外套。",
+   "word_audio": "audio/w_421.mp3",
+   "sent_audio": "audio/s_421.mp3"
+  },
+  {
+   "id": 422,
+   "en": "hot dog",
+   "cn": "热狗",
+   "sent": "I have a hot dog.",
+   "cn_sent": "我有一个热狗。",
+   "word_audio": "audio/w_422.mp3",
+   "sent_audio": "audio/s_422.mp3"
+  },
+  {
+   "id": 423,
+   "en": "boat",
+   "cn": "小船",
+   "sent": "There is a boat on the lake.",
+   "cn_sent": "湖上有一只小船。",
+   "word_audio": "audio/w_423.mp3",
+   "sent_audio": "audio/s_423.mp3"
+  },
+  {
+   "id": 424,
+   "en": "hungry",
+   "cn": "饿的",
+   "sent": "I am hungry.",
+   "cn_sent": "我饿了。",
+   "word_audio": "audio/w_424.mp3",
+   "sent_audio": "audio/s_424.mp3"
+  },
+  {
+   "id": 425,
+   "en": "game",
+   "cn": "游戏/比赛",
+   "sent": "We play a game.",
+   "cn_sent": "我们玩游戏。",
+   "word_audio": "audio/w_425.mp3",
+   "sent_audio": "audio/s_425.mp3"
+  },
+  {
+   "id": 426,
+   "en": "funny",
+   "cn": "有趣的",
+   "sent": "The story is funny.",
+   "cn_sent": "这个故事很有趣。",
+   "word_audio": "audio/w_426.mp3",
+   "sent_audio": "audio/s_426.mp3"
+  },
+  {
+   "id": 427,
+   "en": "sorry",
+   "cn": "对不起",
+   "sent": "I am sorry.",
+   "cn_sent": "对不起。",
+   "word_audio": "audio/w_427.mp3",
+   "sent_audio": "audio/s_427.mp3"
+  },
+  {
+   "id": 428,
+   "en": "six",
+   "cn": "六",
+   "sent": "I get up at six.",
+   "cn_sent": "我六点起床。",
+   "word_audio": "audio/w_428.mp3",
+   "sent_audio": "audio/s_428.mp3"
+  },
+  {
+   "id": 429,
+   "en": "rain",
+   "cn": "雨",
+   "sent": "It will rain.",
+   "cn_sent": "要下雨了。",
+   "word_audio": "audio/w_429.mp3",
+   "sent_audio": "audio/s_429.mp3"
+  },
+  {
+   "id": 430,
+   "en": "dictionary",
+   "cn": "词典",
+   "sent": "I use a dictionary.",
+   "cn_sent": "我使用词典。",
+   "word_audio": "audio/w_430.mp3",
+   "sent_audio": "audio/s_430.mp3"
+  },
+  {
+   "id": 431,
+   "en": "OK",
+   "cn": "好的",
+   "sent": "OK, let's go.",
+   "cn_sent": "好的，我们走吧。",
+   "word_audio": "audio/w_431.mp3",
+   "sent_audio": "audio/s_431.mp3"
+  },
+  {
+   "id": 432,
+   "en": "farmer",
+   "cn": "农民",
+   "sent": "The farmer has a farm.",
+   "cn_sent": "农民有一个农场。",
+   "word_audio": "audio/w_432.mp3",
+   "sent_audio": "audio/s_432.mp3"
+  },
+  {
+   "id": 433,
+   "en": "eye",
+   "cn": "眼睛",
+   "sent": "I have two eyes.",
+   "cn_sent": "我有两只眼睛。",
+   "word_audio": "audio/w_433.mp3",
+   "sent_audio": "audio/s_433.mp3"
+  },
+  {
+   "id": 434,
+   "en": "pencil box",
+   "cn": "铅笔盒",
+   "sent": "My pencil box is new.",
+   "cn_sent": "我的铅笔盒是新的。",
+   "word_audio": "audio/w_434.mp3",
+   "sent_audio": "audio/s_434.mp3"
+  },
+  {
+   "id": 435,
+   "en": "get",
+   "cn": "得到",
+   "sent": "I get up at six.",
+   "cn_sent": "我六点起床。",
+   "word_audio": "audio/w_435.mp3",
+   "sent_audio": "audio/s_435.mp3"
+  },
+  {
+   "id": 436,
+   "en": "two",
+   "cn": "二",
+   "sent": "I can see two cats.",
+   "cn_sent": "我能看到两只猫。",
+   "word_audio": "audio/w_436.mp3",
+   "sent_audio": "audio/s_436.mp3"
+  },
+  {
+   "id": 437,
+   "en": "carrot",
+   "cn": "胡萝卜",
+   "sent": "The rabbit likes carrots.",
+   "cn_sent": "兔子喜欢胡萝卜。",
+   "word_audio": "audio/w_437.mp3",
+   "sent_audio": "audio/s_437.mp3"
+  },
+  {
+   "id": 438,
+   "en": "sun",
+   "cn": "太阳",
+   "sent": "The sun is bright.",
+   "cn_sent": "太阳很明亮。",
+   "word_audio": "audio/w_438.mp3",
+   "sent_audio": "audio/s_438.mp3"
+  },
+  {
+   "id": 439,
+   "en": "ask",
+   "cn": "问",
+   "sent": "I ask a question.",
+   "cn_sent": "我问一个问题。",
+   "word_audio": "audio/w_439.mp3",
+   "sent_audio": "audio/s_439.mp3"
+  },
+  {
+   "id": 440,
+   "en": "where",
+   "cn": "哪里",
+   "sent": "Where is my bag?",
+   "cn_sent": "我的书包在哪里？",
+   "word_audio": "audio/w_440.mp3",
+   "sent_audio": "audio/s_440.mp3"
+  },
+  {
+   "id": 441,
+   "en": "him",
+   "cn": "他(宾格)",
+   "sent": "I like him.",
+   "cn_sent": "我喜欢他。",
+   "word_audio": "audio/w_441.mp3",
+   "sent_audio": "audio/s_441.mp3"
+  },
+  {
+   "id": 442,
+   "en": "month",
+   "cn": "月份",
+   "sent": "There are twelve months in a year.",
+   "cn_sent": "一年有十二个月。",
+   "word_audio": "audio/w_442.mp3",
+   "sent_audio": "audio/s_442.mp3"
+  },
+  {
+   "id": 443,
+   "en": "all",
+   "cn": "全部",
+   "sent": "All the students are here.",
+   "cn_sent": "所有的学生都在这。",
+   "word_audio": "audio/w_443.mp3",
+   "sent_audio": "audio/s_443.mp3"
+  },
+  {
+   "id": 444,
+   "en": "whose",
+   "cn": "谁的",
+   "sent": "Whose pen is this?",
+   "cn_sent": "这是谁的笔？",
+   "word_audio": "audio/w_444.mp3",
+   "sent_audio": "audio/s_444.mp3"
+  },
+  {
+   "id": 445,
+   "en": "it",
+   "cn": "它",
+   "sent": "It is a cat.",
+   "cn_sent": "它是一只猫。",
+   "word_audio": "audio/w_445.mp3",
+   "sent_audio": "audio/s_445.mp3"
+  },
+  {
+   "id": 446,
+   "en": "usually",
+   "cn": "通常",
+   "sent": "I usually walk to school.",
+   "cn_sent": "我通常走路去学校。",
+   "word_audio": "audio/w_446.mp3",
+   "sent_audio": "audio/s_446.mp3"
+  },
+  {
+   "id": 447,
+   "en": "sing",
+   "cn": "唱歌",
+   "sent": "She sings a song.",
+   "cn_sent": "她唱一首歌。",
+   "word_audio": "audio/w_447.mp3",
+   "sent_audio": "audio/s_447.mp3"
+  },
+  {
+   "id": 448,
+   "en": "come",
+   "cn": "来",
+   "sent": "Come here, please.",
+   "cn_sent": "请过来。",
+   "word_audio": "audio/w_448.mp3",
+   "sent_audio": "audio/s_448.mp3"
+  },
+  {
+   "id": 449,
+   "en": "in",
+   "cn": "在…里面",
+   "sent": "The book is in the bag.",
+   "cn_sent": "书在书包里。",
+   "word_audio": "audio/w_449.mp3",
+   "sent_audio": "audio/s_449.mp3"
+  },
+  {
+   "id": 450,
+   "en": "cold",
+   "cn": "寒冷的",
+   "sent": "It is cold today.",
+   "cn_sent": "今天很冷。",
+   "word_audio": "audio/w_450.mp3",
+   "sent_audio": "audio/s_450.mp3"
+  },
+  {
+   "id": 451,
+   "en": "jump",
+   "cn": "跳",
+   "sent": "The cat can jump.",
+   "cn_sent": "猫会跳。",
+   "word_audio": "audio/w_451.mp3",
+   "sent_audio": "audio/s_451.mp3"
+  },
+  {
+   "id": 452,
+   "en": "may",
+   "cn": "可以",
+   "sent": "May I come in?",
+   "cn_sent": "我可以进来吗？",
+   "word_audio": "audio/w_452.mp3",
+   "sent_audio": "audio/s_452.mp3"
+  },
+  {
+   "id": 453,
+   "en": "work",
+   "cn": "工作",
+   "sent": "My father works in a hospital.",
+   "cn_sent": "我爸爸在医院工作。",
+   "word_audio": "audio/w_453.mp3",
+   "sent_audio": "audio/s_453.mp3"
+  },
+  {
+   "id": 454,
+   "en": "apple",
+   "cn": "苹果",
+   "sent": "The apple is red.",
+   "cn_sent": "苹果是红色的。",
+   "word_audio": "audio/w_454.mp3",
+   "sent_audio": "audio/s_454.mp3"
+  },
+  {
+   "id": 455,
+   "en": "present",
+   "cn": "礼物",
+   "sent": "The present is for you.",
+   "cn_sent": "这份礼物是给你的。",
+   "word_audio": "audio/w_455.mp3",
+   "sent_audio": "audio/s_455.mp3"
+  },
+  {
+   "id": 456,
+   "en": "head",
+   "cn": "头",
+   "sent": "Touch your head.",
+   "cn_sent": "摸摸你的头。",
+   "word_audio": "audio/w_456.mp3",
+   "sent_audio": "audio/s_456.mp3"
+  },
+  {
+   "id": 457,
+   "en": "kite",
+   "cn": "风筝",
+   "sent": "I fly a kite.",
+   "cn_sent": "我放风筝。",
+   "word_audio": "audio/w_457.mp3",
+   "sent_audio": "audio/s_457.mp3"
+  },
+  {
+   "id": 458,
+   "en": "long",
+   "cn": "长的",
+   "sent": "My hair is long.",
+   "cn_sent": "我的头发很长。",
+   "word_audio": "audio/w_458.mp3",
+   "sent_audio": "audio/s_458.mp3"
+  },
+  {
+   "id": 459,
+   "en": "summer",
+   "cn": "夏天",
+   "sent": "We swim in summer.",
+   "cn_sent": "我们夏天游泳。",
+   "word_audio": "audio/w_459.mp3",
+   "sent_audio": "audio/s_459.mp3"
+  },
+  {
+   "id": 460,
+   "en": "Thursday",
+   "cn": "星期四",
+   "sent": "I play football on Thursday.",
+   "cn_sent": "我星期四踢足球。",
+   "word_audio": "audio/w_460.mp3",
+   "sent_audio": "audio/s_460.mp3"
+  },
+  {
+   "id": 461,
+   "en": "classroom",
+   "cn": "教室",
+   "sent": "Our classroom is big.",
+   "cn_sent": "我们的教室很大。",
+   "word_audio": "audio/w_461.mp3",
+   "sent_audio": "audio/s_461.mp3"
+  },
+  {
+   "id": 462,
+   "en": "leg",
+   "cn": "腿",
+   "sent": "My legs are long.",
+   "cn_sent": "我的腿很长。",
+   "word_audio": "audio/w_462.mp3",
+   "sent_audio": "audio/s_462.mp3"
+  }
+ ]
+}
